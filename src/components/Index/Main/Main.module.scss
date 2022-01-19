@@ -52,6 +52,7 @@
         display: inline-flex;
         align-items: center;
         justify-content: center;
+        min-width: 210px;
         &:first-child {
           border: none;
           background-image: linear-gradient(114deg, #772cd2, rgba(253, 19, 127, 0.8) 126%);
@@ -60,4 +61,17 @@
       }
     }
   }
+}
+
+.bg__circle {
+  position: absolute;
+  bottom: -500px;
+  right: -200px;
+  width: 532px;
+  height: 700px;
+  opacity: 0.5;
+  border-radius: 576.9px;
+  -webkit-filter: blur(192.3px);
+  filter: blur(192.3px);
+  background-image: linear-gradient(to bottom, #772cd2, rgba(253, 19, 127, 0.8));
 }

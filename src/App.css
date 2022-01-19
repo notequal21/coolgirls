@@ -10,6 +10,7 @@ body {
   max-width: 1190px;
   margin: 0 auto;
   padding: 0 15px;
+  position: relative;
 }
 .wrapper {
   min-height: 100vh;
@@ -20,4 +21,5 @@ body {
 }
 .content {
   flex: 1 1 auto;
+  position: relative;
 }

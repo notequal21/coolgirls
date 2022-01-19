@@ -6,6 +6,7 @@ let Main = () => {
     <>
       <div className={`${style.main}`}>
         <div className="container">
+          <div className={style.bg__circle}></div>
           <div className={`${style.mainBody}`}>
             <div className={`${style.mainBody__text}`}>
               <div className={`${style.mainBody__textTitle}`}>
