@@ -1,0 +1,23 @@
+@import './_normalize.css';
+@import './fonts/fonts.css';
+
+::selection {}
+
+body {
+  overflow: auto;
+}
+.container {
+  max-width: 1190px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.wrapper {
+  min-height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  background-color: #031018;
+}
+.content {
+  flex: 1 1 auto;
+}

@@ -1,0 +1,63 @@
+.main {
+  margin: 100px 0 80px;
+  &Body {
+    &__text {
+      &Title {
+        font-family: AvenirNext;
+        font-size: 56px;
+        font-weight: 900;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.34;
+        letter-spacing: -0.4px;
+        text-align: center;
+        color: #fff;
+        text-transform: uppercase;
+
+        span {
+          background: rgb(178,77,171);
+          background: linear-gradient(90deg, rgba(178,77,171,1) -20%, rgba(69,206,241,1) 100%);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
+      }
+      &Desc {
+        margin: 20px auto 0;
+        opacity: 0.4;
+        font-family: AvenirNext;
+        font-size: 14px;
+        font-weight: 500;
+        text-align: center;
+        color: #fff;
+        max-width: 800px;
+        line-height: 1.4;
+      }   
+    }
+    &__btns {
+      margin: 40px 0 0 0;
+      display: flex;
+      justify-content: center;
+      &Item {
+        cursor: pointer;
+        font-family: AvenirNext;
+        font-size: 16px;
+        font-weight: bold;
+        letter-spacing: -0.11px;
+        text-align: center;
+        color: #fff;
+        border-radius: 21px;
+        border: solid 2px rgba(255, 255, 255, 0.1);
+        background-color: transparent;
+        padding: 18px 25px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        &:first-child {
+          border: none;
+          background-image: linear-gradient(114deg, #772cd2, rgba(253, 19, 127, 0.8) 126%);
+          margin: 0 14px 0 0;
+        }
+      }
+    }
+  }
+}

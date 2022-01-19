@@ -1,0 +1,88 @@
+@font-face {
+  font-family: AvenirNext;
+  font-display: swap;
+  src: url("avenirnextcyr-heavy.woff");
+  font-weight: 900;
+  font-style: normal;
+}
+/* @font-face {
+  font-family: AvenirNext;
+  font-display: swap;
+  src: url("AnyConv.com__Metropolis-ExtraBold.woff");
+  font-weight: 900;
+  font-style: normal;
+} */
+/* @font-face {
+  font-family: AvenirNext;
+  font-display: swap;
+  src: url("AnyConv.com__Metropolis-ExtraBoldItalic.woff");
+  font-weight: 900;
+  font-style: italic;
+} */
+
+@font-face {
+  font-family: AvenirNext;
+  font-display: swap;
+  src: url("AnyConv.com__Metropolis-Medium.woff");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: AvenirNext;
+  font-display: swap;
+  src: url("AnyConv.com__Metropolis-MediumItalic.woff");
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: AvenirNext;
+  font-display: swap;
+  src: url("AnyConv.com__Metropolis-Bold.woff");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: AvenirNext;
+  font-display: swap;
+  src: url("AnyConv.com__Metropolis-BoldItalic.woff");
+  font-weight: 700;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: AvenirNext;
+  font-display: swap;
+  src: url("AnyConv.com__Metropolis-SemiBold.woff");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: AvenirNext;
+  font-display: swap;
+  src: url("AnyConv.com__Metropolis-SemiBoldItalic.woff");
+  font-weight: 600;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: AvenirNext;
+  font-display: swap;
+  src: url("AnyConv.com__Metropolis-Regular.woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: AvenirNext;
+  font-display: swap;
+  src: url("AnyConv.com__Metropolis-RegularItalic.woff");
+  font-weight: 400;
+  font-style: italic;
+}
+
+
+/* 
+@font-face {
+	font-family: 'AvenirNextCyr-Heavy';
+	src: url('../fonts/avenirnextcyr-heavy.eot');
+} */
