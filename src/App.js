@@ -4,6 +4,7 @@ import Header from './components/Header/Header';
 import CoolCoin from './components/Index/CoolCoin/CoolCoin';
 import CoolGirls from './components/Index/CoolGirls/CoolGirls';
 import Faqs from './components/Index/Faqs/Faqs';
+import GirlsSlider from './components/Index/GirlsSlider/GirlsSlider';
 import Main from './components/Index/Main/Main';
 import PlayEarn from './components/Index/PlayEarn/PlayEarn';
 import Roadmap from './components/Index/Roadmap/Roadmap';
@@ -16,7 +17,7 @@ function App() {
         <Header />
         <div className="content">
           <Main />
-
+          <GirlsSlider />
           <Roadmap />
           <CoolCoin />
           <CoolGirls />

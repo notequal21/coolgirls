@@ -1,0 +1,57 @@
+.slider {
+  margin: 30px 0 0 0;
+  &__slide {
+    width: 360px !important;
+  }
+  &Item {
+    padding: 20px 20px 35px;
+    border-radius: 21px;
+    border: solid 3px rgba(255, 255, 255, 0.05);
+    background-color: rgba(119, 44, 210, 0);
+    &__content {
+      transition: all .3s ease;
+      position: absolute;
+      transform: scale(0);
+      &.active {
+        transform: scale(1);
+        position: relative;
+      }
+    }
+    &__img {
+      width: 320px;
+      padding: 0 0 100% 0;
+      background-color: rgba(68, 68, 68, 0.452);
+      border-radius: 21px;
+      overflow: hidden;
+    }
+    &__name {
+      margin: 35px 0 0 0;
+      font-family: AvenirNext;
+      font-size: 22px;
+      font-weight: bold;
+      letter-spacing: -0.16px;
+      color: #fff;
+    }
+    &__info {
+      margin: 20px 0 0 0;
+      display: flex;
+      justify-content: space-between;
+      &Item {
+        font-family: AvenirNext;
+        font-size: 10px;
+        font-weight: 500;
+        letter-spacing: -0.07px;
+        color: rgba($color: #fff, $alpha: 0.5);
+        span {
+          display: block;
+          margin: 10px 0 0 0;
+          font-family: AvenirNext;
+          font-size: 14px;
+          font-weight: bold;
+          letter-spacing: -0.1px;
+          color: #fff;
+        }
+      }
+    }
+  }
+}
