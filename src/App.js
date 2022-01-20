@@ -2,6 +2,7 @@ import './App.css';
 import Footer from './components/Footer/Footer';
 import Header from './components/Header/Header';
 import Main from './components/Index/Main/Main';
+import Roadmap from './components/Index/Roadmap/Roadmap';
 
 function App() {
   return (
@@ -10,6 +11,8 @@ function App() {
         <Header />
         <div className="content">
           <Main />
+
+          <Roadmap />
         </div>
         <Footer />
       </div>

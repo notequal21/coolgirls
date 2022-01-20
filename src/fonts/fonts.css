@@ -5,6 +5,13 @@
   font-weight: 900;
   font-style: normal;
 }
+@font-face {
+  font-family: AvenirNext;
+  font-display: swap;
+  src: url("AvenirNextW05HeavyItalic.woff");
+  font-weight: 900;
+  font-style: italic;
+}
 /* @font-face {
   font-family: AvenirNext;
   font-display: swap;
