@@ -1,0 +1,79 @@
+.footer {
+  background-color: #191D30;
+  &Body {
+    padding: 60px 0;
+    display: flex;
+    justify-content: space-between;
+    &__col {
+      display: flex;
+      flex-direction: column;
+      &:last-child {
+        align-items: flex-end;
+        flex: 1 1 auto;
+      }
+    }
+    &__logo {
+
+    }
+    &__cr {
+      margin: 12px 0 0 0;
+      opacity: 0.4;
+      font-family: AvenirNext;
+      font-size: 12px;
+      font-weight: 500;
+      letter-spacing: -0.09px;
+      color: #fff;
+    }
+    &__theme {
+      margin: 20px 0 0 0;
+    }
+    &__social {
+      width: 130px;
+      margin: 30px 0 0 0;
+      display: flex;
+      justify-content: space-between;
+      &Item {
+        cursor: pointer;
+        display: inline-block;
+        width: 20px;
+        height: 16px;
+        svg {
+          width: 100%;
+          height: 100%;
+          path {
+            color: rgba($color: #fff, $alpha: 0.4);
+          }
+        }
+      }
+    }
+    &__btn {
+      cursor: pointer;
+      display: inline-block;
+      font-family: AvenirNext;
+      font-size: 16px;
+      font-weight: bold;
+      letter-spacing: -0.11px;
+      text-align: center;
+      color: #fff;
+      padding: 20px 25px;
+      width: 210px;
+      border-radius: 21px;
+      text-transform: uppercase;
+      background-image: linear-gradient(114deg, #772cd2, rgba(253, 19, 127, 0.8) 126%);
+    }
+    &__links {
+      display: flex;
+      justify-content: space-between;
+      margin: auto 0 0 0;
+      &Item {
+        cursor: pointer;
+        font-family: AvenirNext;
+        font-size: 12px;
+        font-weight: 500;
+        letter-spacing: -0.09px;
+        color: #fff;
+        margin: 0 0 0 40px;
+      }
+    }
+  }
+}
