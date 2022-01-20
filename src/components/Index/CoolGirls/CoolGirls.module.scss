@@ -1,0 +1,134 @@
+.girls {
+  margin: 140px 0 0 0;
+  &__heading {
+    font-family: AvenirNext;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: -0.11px;
+    text-align: center;
+    color: #ca1c9f;
+  }
+  &__title {
+    margin: 20px 0 0 0;
+    font-family: AvenirNext;
+    font-size: 66px;
+    font-weight: 900;
+    letter-spacing: -0.47px;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+  }
+  &__desc {
+    margin: 20px auto 0;
+    opacity: 0.4;
+    font-family: AvenirNext;
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+    color: #fff;
+    max-width: 640px;
+  }
+  &Body {
+    margin: 60px 0 0 0;
+    display: flex;
+    justify-content: space-between;
+    &__item {
+      flex: 0 1 360px;
+      margin: 0 0 0 30px;
+      border-radius: 21px;
+      position: relative;
+      z-index: 1;
+      overflow: hidden;
+      &Bg {
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        -webkit-filter: blur(50px);
+        filter: blur(50px);
+      }
+      &:first-child {
+        margin: 0;
+        .girlsBody__itemBg {
+          background: rgb(255,111,178);
+          background: linear-gradient(338deg, rgba(255,111,178,1) 0%, rgba(153,62,246,1) 35%, rgba(149,64,251,1) 39%, rgba(253,19,127,1) 100%);
+        }
+      }
+      &:nth-child(2) {
+        .girlsBody__itemBg {
+          background-color: #893de4;
+        }
+      }
+      &:nth-child(3) {
+        .girlsBody__itemBg {
+          border: solid 3px rgba(0, 0, 0, 0.2);
+          background-image: linear-gradient(29deg, #e4148c -36%, #3ed5f5 100%);
+        }
+      }
+      &Img {
+        padding: 0 0 113% 0;
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: contain;
+          object-position: center bottom;
+        }
+      }
+      &Content {
+        padding: 25px 30px 30px;
+      }
+      &Name {
+        font-family: AvenirNext;
+        font-size: 32px;
+        font-weight: bold;
+        letter-spacing: -0.23px;
+        color: #fff;
+      }
+      &Info {
+        margin: 15px 0 0 0;
+        display: flex;
+        &Item {
+          flex: 0 0 50%;
+          font-family: AvenirNext;
+          font-size: 12px;
+          font-weight: 500;
+          letter-spacing: -0.1px;
+          color: rgba($color: #fff, $alpha: 0.5);
+          span {
+            display: block;
+            margin: 7px 0 0 0;
+            font-family: AvenirNext;
+            font-size: 14px;
+            font-weight: bold;
+            letter-spacing: -0.12px;
+            color: #fff;
+          }
+        }
+      }
+      &Btn {
+        padding: 18px 0;
+        margin: 30px 0 0 0;
+        font-family: AvenirNext;
+        font-size: 16px;
+        font-weight: bold;
+        letter-spacing: -0.11px;
+        text-align: center;
+        color: #db0e94;
+        text-transform: uppercase;
+
+        border-radius: 21px;
+        border: solid 2px rgba(255, 255, 255, 0.1);
+        background-color: rgba(255, 255, 255, 0.9);
+        cursor: pointer;
+        &_soon {
+          cursor: default;
+          border: solid 2px rgba(255, 255, 255, 0.01);
+          background-color: rgba(255, 255, 255, 0.2);
+          color: #fff;
+        }
+      }
+    }
+  }
+}
