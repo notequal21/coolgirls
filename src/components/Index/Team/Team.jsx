@@ -15,7 +15,7 @@ let Team = () => {
               </div>
               <div className={style.teamBody__itemName}>
                 <span>Julia Mironova</span>
-                <a href='#' className={style.teamBody__itemLink}>
+                <a href='#./' className={style.teamBody__itemLink}>
                   <svg width="28px" height="28px" viewBox="0 0 28 28" version="1.1" xmlns="http://www.w3.org/2000/svg">
                     <title>Path 3</title>
                     <g id="CG" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.4">
@@ -60,7 +60,7 @@ let Team = () => {
               </div>
               <div className={style.teamBody__itemName}>
                 <span>Developer</span>
-                <a href='#' className={style.teamBody__itemLink}>
+                <a href='#./' className={style.teamBody__itemLink}>
                   <svg width="28px" height="28px" viewBox="0 0 28 28" version="1.1" xmlns="http://www.w3.org/2000/svg">
                     <title>Path 3</title>
                     <g id="CG" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.4">
