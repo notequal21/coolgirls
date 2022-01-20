@@ -1,0 +1,80 @@
+.coin {
+  margin: 140px 0 0 0;
+  &Body {
+    display: flex;
+    border-radius: 21px;
+    border: solid 2px rgba(255, 255, 255, 0.03);
+    background-color: rgba(255, 255, 255, 0);
+    overflow: hidden;
+    padding: 70px;
+    &__col {
+      flex: 0 0 50%;
+      position: relative;
+      &Glow {
+        position: absolute;
+        top: -130px;
+        right: -150px;
+        width: 426px;
+        height: 265px;
+        border-radius: 576.9px;
+        -webkit-filter: blur(192.3px);
+        filter: blur(192.3px);
+        background-image: linear-gradient(126deg, #772cd2 23%, rgba(253, 19, 127, 0.8) 72%);
+      }
+    }
+    &__title {
+      font-family: AvenirNext;
+      font-size: 36px;
+      font-weight: 900;
+      letter-spacing: -0.26px;
+      color: #fff;
+      text-transform: uppercase;
+    }
+    &__desc {
+      margin: 26px 0 0 0;
+      font-family: AvenirNext;
+      font-size: 16px;
+      font-weight: 400;
+      color: #fff;
+      line-height: 1.4;
+      button {
+        background-color: transparent;
+        font-weight: 600;
+        color: #a04cff;
+      }
+    }
+    &__btns {
+      display: flex;
+      margin: 50px 0 0 0;
+      &Item {
+        cursor: pointer;
+        padding: 20px;
+        min-width: 200px;
+        font-family: AvenirNext;
+        font-size: 16px;
+        font-weight: bold;
+        letter-spacing: -0.11px;
+        text-align: center;
+        color: #fff;
+        border-radius: 21px;
+        border: solid 2px rgba(255, 255, 255, 0.001);
+        background-color: rgba($color: #fff, $alpha: 0.1);
+        &:last-child {
+          border: solid 2px rgba(255, 255, 255, 0.1);
+          background-color: rgba(3, 16, 24, 0);
+          margin: 0 0 0 17px;
+        }
+      }
+    }
+    &__img {
+      width: 400px;
+      height: 250px;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        object-position: center;
+      }
+    }
+  }
+}

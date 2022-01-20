@@ -1,6 +1,7 @@
 import './App.css';
 import Footer from './components/Footer/Footer';
 import Header from './components/Header/Header';
+import CoolCoin from './components/Index/CoolCoin/CoolCoin';
 import Main from './components/Index/Main/Main';
 import Roadmap from './components/Index/Roadmap/Roadmap';
 
@@ -13,6 +14,7 @@ function App() {
           <Main />
 
           <Roadmap />
+          <CoolCoin />
         </div>
         <Footer />
       </div>
