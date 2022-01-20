@@ -7,6 +7,7 @@ import Faqs from './components/Index/Faqs/Faqs';
 import Main from './components/Index/Main/Main';
 import PlayEarn from './components/Index/PlayEarn/PlayEarn';
 import Roadmap from './components/Index/Roadmap/Roadmap';
+import Team from './components/Index/Team/Team';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
           <CoolGirls />
           <PlayEarn />
           <Faqs />
+          <Team />
         </div>
         <Footer />
       </div>
