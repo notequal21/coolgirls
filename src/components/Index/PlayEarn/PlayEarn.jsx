@@ -1,4 +1,12 @@
 import style from './PlayEarn.module.scss'
+import "swiper/css";
+import "swiper/css/effect-cards"
+import { Swiper, SwiperSlide } from "swiper/react";
+import SwiperCore, {
+  EffectCards
+} from 'swiper';
+
+SwiperCore.use([EffectCards]);
 
 let PlayEarn = () => {
   return (
@@ -15,7 +23,37 @@ let PlayEarn = () => {
             Get Girls now to play with in our upcoming game. We are also going to partner with other metaverse games to make your NFT's usuable in other worlds so that you can fully benefit from your art
           </div>
           <div className={style.palySlider}>
-            slider
+
+            <Swiper effect={'cards'} grabCursor={true} className={style.palySlider__content}>
+              <SwiperSlide className={style.palySlider__contentItem}>
+                <div className={style.palySlider__contentItemImg}></div>
+              </SwiperSlide>
+              <SwiperSlide className={style.palySlider__contentItem}>
+                <div className={style.palySlider__contentItemImg}></div>
+              </SwiperSlide>
+              <SwiperSlide className={style.palySlider__contentItem}>
+                <div className={style.palySlider__contentItemImg}></div>
+              </SwiperSlide>
+              <SwiperSlide className={style.palySlider__contentItem}>
+                <div className={style.palySlider__contentItemImg}></div>
+              </SwiperSlide>
+              <SwiperSlide className={style.palySlider__contentItem}>
+                <div className={style.palySlider__contentItemImg}></div>
+              </SwiperSlide>
+              <SwiperSlide className={style.palySlider__contentItem}>
+                <div className={style.palySlider__contentItemImg}></div>
+              </SwiperSlide>
+              <SwiperSlide className={style.palySlider__contentItem}>
+                <div className={style.palySlider__contentItemImg}></div>
+              </SwiperSlide>
+              <SwiperSlide className={style.palySlider__contentItem}>
+                <div className={style.palySlider__contentItemImg}></div>
+              </SwiperSlide>
+              <SwiperSlide className={style.palySlider__contentItem}>
+                <div className={style.palySlider__contentItemImg}></div>
+              </SwiperSlide>
+            </Swiper>
+
           </div>
           <div className={style.palyBottom}>
             <div className={style.palyBottom__col}>

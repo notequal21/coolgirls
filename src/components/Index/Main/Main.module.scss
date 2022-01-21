@@ -75,3 +75,50 @@
   filter: blur(192.3px);
   background-image: linear-gradient(to bottom, #772cd2, rgba(253, 19, 127, 0.8));
 }
+
+@media (max-width:1500px) {
+
+}
+@media (max-width:1200px) {
+
+}
+@media (max-width:992px) {
+  .bg__circle {
+    display: none;
+  }
+  .main {
+    &Body {
+      &__text {
+        &Title {
+          font-size: 38px;
+          .br {
+            display: none;
+            &__mobile {
+              display: block;
+            }
+          }
+        }
+        &Desc {
+          margin: 10px auto 0;
+          font-size: 12px;
+        }
+      }
+      &__btns {
+        margin: 30px auto 0;
+        &Item {
+          font-size: 14px;
+          min-width: auto;
+        }
+      }
+    }
+  }
+}
+@media (max-width:767px) {
+  
+}
+@media (max-width:575px) {
+  
+}
+@media (max-width:375px) {
+  
+}

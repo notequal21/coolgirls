@@ -2,6 +2,12 @@ import style from './GirlsSlider.module.scss'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import './sliderStyles.scss';
+import "swiper/css/effect-creative"
+import SwiperCore, {
+  EffectCreative
+} from 'swiper';
+
+SwiperCore.use([EffectCreative]);
 
 let GirlsSlider = () => {
   return (
@@ -12,9 +18,28 @@ let GirlsSlider = () => {
           spaceBetween={50}
           slidesPerView={'auto'}
           loop={true}
+          initialSlide={2}
           centeredSlides={true}
-          onSlideChange={() => console.log('slide change')}
-          onSwiper={(swiper) => console.log(swiper)}
+          // onSlideChange={(swiper) => console.log(swiper, swiper.activeIndex, swiper.slides[swiper.activeIndex - 2], swiper.slides[swiper.activeIndex + 2].style)}
+          // effect={'creative'}
+          // limitProgress={3}
+          creativeEffect={{
+            prev: {
+              translate: ['calc(-100% - 50px)', '10%', 0],
+              rotate: [0, 0, -10],
+              origin: 'center',
+              // opacity?: number;
+              // scale: 0.4,
+              // shadow?: boolean;
+              isActive: false
+            },
+            next: {
+              translate: ['calc(100% + 50px)', '10%', 0],
+              rotate: [0, 0, 10],
+              origin: 'center',
+            },
+          }}
+        // onSwiper={(swiper) => console.log(swiper)}
         >
           <SwiperSlide className={style.slider__slide}>
             {({ isActive }) => (
