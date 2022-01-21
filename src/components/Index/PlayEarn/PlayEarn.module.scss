@@ -35,10 +35,16 @@
         &Img {
           margin: 0 auto;
           max-width: 990px;
+          // height: 555px;
           padding: 0 0 48.267% 0;
           background-color: rgb(119, 119, 119);
           border-radius: 21px;
+          position: relative;
+          overflow: hidden;
           img {
+            position: absolute;
+            top: 0;
+            left: 0;
             width: 100%;
             height: 100%;
             object-fit: cover;

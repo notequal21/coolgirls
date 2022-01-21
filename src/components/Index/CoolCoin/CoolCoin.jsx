@@ -1,5 +1,8 @@
 import style from './CoolCoin.module.scss'
 
+// imgs
+import img from '../../../assets/img/coolcoin/img@2x.png'
+
 let CoolCoin = () => {
   return (
     <>
@@ -25,7 +28,7 @@ let CoolCoin = () => {
             <div className={style.coinBody__col}>
               <div className={style.coinBody__colGlow}></div>
               <div className={style.coinBody__img}>
-                400x250
+                <img src={img} alt="" />
               </div>
             </div>
           </div>

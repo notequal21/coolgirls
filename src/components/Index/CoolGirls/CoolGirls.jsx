@@ -1,5 +1,10 @@
 import style from './CoolGirls.module.scss'
 
+// img
+import img01 from '../../../assets/img/coolGirls/img01.png'
+import img02 from '../../../assets/img/coolGirls/img02.png'
+import img03 from '../../../assets/img/coolGirls/img03.png'
+
 let CoolGirls = () => {
   return (
     <>
@@ -18,7 +23,7 @@ let CoolGirls = () => {
             <div className={style.girlsBody__item}>
               <div className={style.girlsBody__itemBg}></div>
               <div className={style.girlsBody__itemImg}>
-
+                <img src={img01} alt="" />
               </div>
               <div className={style.girlsBody__itemContent}>
 
@@ -47,7 +52,7 @@ let CoolGirls = () => {
             <div className={style.girlsBody__item}>
               <div className={style.girlsBody__itemBg}></div>
               <div className={style.girlsBody__itemImg}>
-
+                <img src={img02} alt="" />
               </div>
               <div className={style.girlsBody__itemContent}>
 
@@ -76,7 +81,7 @@ let CoolGirls = () => {
             <div className={style.girlsBody__item}>
               <div className={style.girlsBody__itemBg}></div>
               <div className={style.girlsBody__itemImg}>
-
+                <img src={img03} alt="" />
               </div>
               <div className={style.girlsBody__itemContent}>
 

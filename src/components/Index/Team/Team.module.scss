@@ -16,7 +16,13 @@
       flex: 0 0 245px;
       &Img {
         padding: 0 0 100% 0;
+        position: relative;
+        border-radius: 21px;
+        overflow: hidden;
         img {
+          position: absolute;
+          top: 0;
+          left: 0;
           width: 100%;
           height: 100%;
           object-fit: cover;

@@ -6,7 +6,11 @@ import SwiperCore, {
   EffectCards
 } from 'swiper';
 
+// imgs
+import img from '../../../assets/img/coolGirls/img01.png'
+
 SwiperCore.use([EffectCards]);
+
 
 let PlayEarn = () => {
   return (
@@ -26,31 +30,49 @@ let PlayEarn = () => {
 
             <Swiper effect={'cards'} grabCursor={true} className={style.palySlider__content}>
               <SwiperSlide className={style.palySlider__contentItem}>
-                <div className={style.palySlider__contentItemImg}></div>
+                <div className={style.palySlider__contentItemImg}>
+                  <img src={img} alt="" />
+                </div>
               </SwiperSlide>
               <SwiperSlide className={style.palySlider__contentItem}>
-                <div className={style.palySlider__contentItemImg}></div>
+                <div className={style.palySlider__contentItemImg}>
+                  <img src={img} alt="" />
+                </div>
               </SwiperSlide>
               <SwiperSlide className={style.palySlider__contentItem}>
-                <div className={style.palySlider__contentItemImg}></div>
+                <div className={style.palySlider__contentItemImg}>
+                  <img src={img} alt="" />
+                </div>
               </SwiperSlide>
               <SwiperSlide className={style.palySlider__contentItem}>
-                <div className={style.palySlider__contentItemImg}></div>
+                <div className={style.palySlider__contentItemImg}>
+                  <img src={img} alt="" />
+                </div>
               </SwiperSlide>
               <SwiperSlide className={style.palySlider__contentItem}>
-                <div className={style.palySlider__contentItemImg}></div>
+                <div className={style.palySlider__contentItemImg}>
+                  <img src={img} alt="" />
+                </div>
               </SwiperSlide>
               <SwiperSlide className={style.palySlider__contentItem}>
-                <div className={style.palySlider__contentItemImg}></div>
+                <div className={style.palySlider__contentItemImg}>
+                  <img src={img} alt="" />
+                </div>
               </SwiperSlide>
               <SwiperSlide className={style.palySlider__contentItem}>
-                <div className={style.palySlider__contentItemImg}></div>
+                <div className={style.palySlider__contentItemImg}>
+                  <img src={img} alt="" />
+                </div>
               </SwiperSlide>
               <SwiperSlide className={style.palySlider__contentItem}>
-                <div className={style.palySlider__contentItemImg}></div>
+                <div className={style.palySlider__contentItemImg}>
+                  <img src={img} alt="" />
+                </div>
               </SwiperSlide>
               <SwiperSlide className={style.palySlider__contentItem}>
-                <div className={style.palySlider__contentItemImg}></div>
+                <div className={style.palySlider__contentItemImg}>
+                  <img src={img} alt="" />
+                </div>
               </SwiperSlide>
             </Swiper>
 

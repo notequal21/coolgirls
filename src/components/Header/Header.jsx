@@ -1,10 +1,18 @@
 import { useState } from 'react'
-import IcoAbout from '../../assets/img/IcoAbout'
-import IcoCoolCoin from '../../assets/img/IcoCoolCoin'
-import IcoFaq from '../../assets/img/IcoFaq'
-import IcoRoadmap from '../../assets/img/IcoRoadmap'
-import IcoTeam from '../../assets/img/IcoTeam'
+// import IcoAbout from '../../assets/img/IcoAbout'
+// import IcoCoolCoin from '../../assets/img/IcoCoolCoin'
+// import IcoFaq from '../../assets/img/IcoFaq'
+// import IcoRoadmap from '../../assets/img/IcoRoadmap'
+// import IcoTeam from '../../assets/img/IcoTeam'
 import style from './Header.module.scss'
+
+// imgs
+import builderIco from '../../assets/img/header/codepen@2x.png'
+import IcoTeam from '../../assets/img/header/users@2x.png'
+import IcoFaq from '../../assets/img/header/help-circle@2x.png'
+import IcoCoolCoin from '../../assets/img/header/oval-copy-21@2x.png'
+import IcoRoadmap from '../../assets/img/header/line@2x.png'
+import IcoAbout from '../../assets/img/header/info@2x.png'
 
 let Header = () => {
 
@@ -23,27 +31,33 @@ let Header = () => {
             </div>
             <div className={`${style.headerBody__menu} ${menuOpen ? style.active : ''}`}>
               <div className={`${style.headerBody__menuItem}`}>
-                <IcoAbout />
+                {/* <IcoAbout /> */}
+                <img src={IcoAbout} alt="" />
                 About
               </div>
               <div className={`${style.headerBody__menuItem}`}>
-                <IcoRoadmap />
+                {/* <IcoRoadmap /> */}
+                <img src={IcoRoadmap} alt="" />
                 Roadmap
               </div>
               <div className={`${style.headerBody__menuItem}`}>
-                <IcoCoolCoin />
+                {/* <IcoCoolCoin /> */}
+                <img src={IcoCoolCoin} alt="" />
                 Cool coin
               </div>
               <div className={`${style.headerBody__menuItem}`}>
-                <IcoFaq />
+                {/* <IcoFaq /> */}
+                <img src={IcoFaq} alt="" />
                 FAQ
               </div>
               <div className={`${style.headerBody__menuItem}`}>
-                <IcoTeam />
+                {/* <IcoTeam /> */}
+                <img src={IcoTeam} alt="" />
                 Team
               </div>
               <div className={`${style.headerBody__menuItem}`}>
-                <IcoCoolCoin />
+                {/* <IcoCoolCoin /> */}
+                <img src={builderIco} alt="" />
                 BUILDER
               </div>
               <div className={style.mobileMenu__footer}>

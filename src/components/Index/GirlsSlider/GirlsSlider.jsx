@@ -44,6 +44,7 @@ let GirlsSlider = () => {
           <SwiperSlide className={style.slider__slide}>
             {({ isActive }) => (
               <div className={`${style.sliderItem} ${isActive ? style.active : ''}`}>
+                <div className={`${style.sliderItem__glow}`}></div>
                 <div className={style.sliderItem__img}>
 
                 </div>
@@ -74,6 +75,7 @@ let GirlsSlider = () => {
           <SwiperSlide className={style.slider__slide}>
             {({ isActive }) => (
               <div className={`${style.sliderItem} ${isActive ? style.active : ''}`}>
+                <div className={`${style.sliderItem__glow}`}></div>
                 <div className={style.sliderItem__img}>
 
                 </div>
@@ -102,6 +104,7 @@ let GirlsSlider = () => {
           <SwiperSlide className={style.slider__slide}>
             {({ isActive }) => (
               <div className={`${style.sliderItem} ${isActive ? style.active : ''}`}>
+                <div className={`${style.sliderItem__glow}`}></div>
                 <div className={style.sliderItem__img}>
 
                 </div>
@@ -130,6 +133,7 @@ let GirlsSlider = () => {
           <SwiperSlide className={style.slider__slide}>
             {({ isActive }) => (
               <div className={`${style.sliderItem} ${isActive ? style.active : ''}`}>
+                <div className={`${style.sliderItem__glow}`}></div>
                 <div className={style.sliderItem__img}>
 
                 </div>
@@ -158,6 +162,7 @@ let GirlsSlider = () => {
           <SwiperSlide className={style.slider__slide}>
             {({ isActive }) => (
               <div className={`${style.sliderItem} ${isActive ? style.active : ''}`}>
+                <div className={`${style.sliderItem__glow}`}></div>
                 <div className={style.sliderItem__img}>
 
                 </div>

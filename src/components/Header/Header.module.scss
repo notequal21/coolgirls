@@ -52,6 +52,12 @@
         svg {
           margin: 0 8px 0 0;
         }
+        img {
+          height: 16px;
+          object-fit: contain;
+          object-position: center;
+          margin: 0 8px 0 0;
+        }
         &:first-child {
           margin: 0;
         }

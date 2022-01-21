@@ -1,5 +1,8 @@
 import style from './Team.module.scss'
 
+// imgs
+import img from '../../../assets/img/coolGirls/img01.png'
+
 let Team = () => {
   return (
     <>
@@ -11,7 +14,7 @@ let Team = () => {
           <div className={style.teamBody}>
             <div className={style.teamBody__item}>
               <div className={style.teamBody__itemImg}>
-
+                <img src={img} alt="" />
               </div>
               <div className={style.teamBody__itemName}>
                 <span>Julia Mironova</span>
@@ -34,7 +37,7 @@ let Team = () => {
             </div>
             <div className={style.teamBody__item}>
               <div className={style.teamBody__itemImg}>
-
+                <img src={img} alt="" />
               </div>
               <div className={style.teamBody__itemName}>
                 <span>Anna Marlow</span>
@@ -45,7 +48,7 @@ let Team = () => {
             </div>
             <div className={style.teamBody__item}>
               <div className={style.teamBody__itemImg}>
-
+                <img src={img} alt="" />
               </div>
               <div className={style.teamBody__itemName}>
                 <span>Nikolay Vronsky</span>
@@ -56,7 +59,7 @@ let Team = () => {
             </div>
             <div className={style.teamBody__item}>
               <div className={style.teamBody__itemImg}>
-
+                <img src={img} alt="" />
               </div>
               <div className={style.teamBody__itemName}>
                 <span>Developer</span>
