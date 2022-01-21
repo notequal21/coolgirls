@@ -59,3 +59,45 @@
     }
   }
 }
+
+@media (max-width:1500px) {
+
+}
+@media (max-width:1200px) {
+
+}
+@media (max-width:992px) {
+
+}
+@media (max-width:767px) {
+  .slider {
+    &__slide {
+      width: 290px !important;
+    }
+    &Item {
+        padding: 15px 15px 30px;
+        &__name {
+          font-size: 18px;
+          margin: 25px 0 0 0;
+        }
+        &__info {
+          margin: 12px 0 0 0;
+          &Item {
+            font-size: 11px;
+            span {
+              font-size: 13px;
+            }
+          }
+        }
+      &__img {
+        width: 254px;
+      }
+    }
+  }
+}
+@media (max-width:575px) {
+  
+}
+@media (max-width:375px) {
+  
+}

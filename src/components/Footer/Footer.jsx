@@ -40,8 +40,10 @@ let Footer = () => {
               </div>
             </div>
             <div className={style.footerBody__col}>
-              <div className={style.footerBody__btn}>
-                Mint cool girl
+              <div className={style.footerBody__btns}>
+                <div className={style.footerBody__btn}>
+                  Mint cool girl
+                </div>
               </div>
               <div className={style.footerBody__links}>
                 <div className={style.footerBody__linksItem}>

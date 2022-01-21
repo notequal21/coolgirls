@@ -385,3 +385,68 @@
     }
   }
 }
+
+
+@media (max-width:1500px) {
+
+}
+@media (max-width:1200px) {
+  .roadmap {
+    &Body {
+      padding: 0;
+      margin: 100px 0 0 0;
+      &__plan {
+        margin: 20px 0 0 0;
+        position: relative;
+        top: auto;
+        left: auto;
+      } 
+      &__bg {
+        display: none;
+      }
+      &__item {
+        // margin-top: 50px;
+        // margin-bottom: 50px;
+        position: relative;
+        top: auto !important;
+        left: auto !important;
+        right: auto !important;
+        bottom: auto !important;
+        transform: translate(0) !important;
+        width: auto;
+        width: 315px !important;
+        &Content { 
+          width: 315px !important;
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          // position: absolute;
+          z-index: 1;
+        }
+      }
+    } 
+  }
+}
+@media (max-width:992px) {
+  .roadmap {
+    margin: 100px 0 0;
+    &Text {
+      &__title {
+        font-size: 36px;
+      }
+      &__desc {
+        margin: 15px auto 0;
+        font-size: 14px;
+      }
+    }
+  }
+}
+@media (max-width:767px) {
+  
+}
+@media (max-width:575px) {
+  
+}
+@media (max-width:375px) {
+  
+}
