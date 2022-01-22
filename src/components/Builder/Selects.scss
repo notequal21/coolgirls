@@ -1,0 +1,61 @@
+.builderSelect {
+  &__control {
+    cursor: pointer !important;
+    border-radius: 16px !important;
+    border: solid 2px rgba(255, 255, 255, 0.1) !important;
+    background-color: rgba(3, 16, 24, 0) !important;
+    box-shadow: none !important;
+    &--is-focused {
+      border: solid 2px #bd1b8a !important;
+      box-shadow: 0 0 4px rgba($color: #7a2bce, $alpha: 1.0) !important;
+    }
+  } 
+  &__value-container {
+    padding: 3px 0 0 16px !important;
+    font-family: AvenirNext;
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: -0.11px;
+    color: #fff;
+  }
+  &__indicators {}
+  &__menu {
+    padding: 0 20px;
+    border-radius: 16px !important;
+    background-color: #1D1B2D !important;
+    &-list {
+    }
+  }
+  &__option {
+    font-family: AvenirNext;
+    font-size: 12px !important; 
+    font-weight: 500;
+    letter-spacing: -0.11px;
+    color: #fff !important;
+    padding: 10px 0 !important;
+    background-color: transparent !important;
+    cursor: pointer !important;
+    &:hover {
+      background-color: transparent !important;
+    }
+  }
+  &__placeholder {
+    font-family: AvenirNext;
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: -0.11px;
+    color: #fff !important;
+    text-transform: uppercase;
+  }
+  &__single-value {
+    font-family: AvenirNext;
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: -0.11px;
+    color: #fff !important;
+    text-transform: uppercase;
+  }
+  &__indicator-separator {
+    display: none;
+  }
+}
