@@ -1,15 +1,9 @@
+import { Route, Routes } from 'react-router-dom';
 import './App.css';
+import Builder from './components/Builder/Builder';
 import Footer from './components/Footer/Footer';
 import Header from './components/Header/Header';
-import CoolCoin from './components/Index/CoolCoin/CoolCoin';
-import CoolGirls from './components/Index/CoolGirls/CoolGirls';
-import Faqs from './components/Index/Faqs/Faqs';
-import GirlsSlider from './components/Index/GirlsSlider/GirlsSlider';
-import Main from './components/Index/Main/Main';
-import PlayEarn from './components/Index/PlayEarn/PlayEarn';
-import Roadmap from './components/Index/Roadmap/Roadmap';
-import Sponsors from './components/Index/Sponsors/Sponsors';
-import Team from './components/Index/Team/Team';
+import Index from './components/Index/Index';
 
 function App() {
   return (
@@ -17,15 +11,10 @@ function App() {
       <div className='wrapper'>
         <Header />
         <div className="content">
-          <Main />
-          <GirlsSlider />
-          <Sponsors />
-          <Roadmap />
-          <CoolCoin />
-          <CoolGirls />
-          <PlayEarn />
-          <Faqs />
-          <Team />
+          <Routes>
+            <Route path='/' element={<Index />} />
+            <Route path='builder' element={<Builder />} />
+          </Routes>
         </div>
         <Footer />
       </div>
