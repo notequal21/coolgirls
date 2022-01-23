@@ -326,7 +326,7 @@ let CoolCoin = () => {
                           <div className={`${style.modalBody__item} ${style.modalBody__item_line}`}>
                             <ResponsiveLine
                               data={data}
-                              margin={{ top: 10, right: 10, bottom: 20, left: 25 }}
+                              margin={{ top: 10, right: 10, bottom: 20, left: 34 }}
                               xScale={{ type: 'point' }}
                               yScale={{
                                 type: 'linear',
