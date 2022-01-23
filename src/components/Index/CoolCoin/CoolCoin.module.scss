@@ -83,11 +83,10 @@
 }
 
 .modal {
-  width: calc(100vw - 200px);
-  height: calc(100vh - 100px);
+  width: 1250px;
   border-radius: 21px;
   background-color: #031018;
-  padding: 50px;
+  padding: 50px 50px 120px;
   position: relative;
   &__close {
     cursor: pointer;
@@ -123,6 +122,7 @@
       position: relative;
       &_line {
         height: 330px;
+        max-width: 560px;
       }
       &Img {
         width: 260px;
@@ -138,7 +138,130 @@
     }
     &__stat {
       position: absolute;
-      &:nth-child(1) {}
+      width: 115px;
+      &:nth-child(1) {
+        top: 50px;
+        left: 280px;
+        .modalBody__statLine {
+          padding: 10px 0 0 0;
+          span {
+            &:nth-child(1) {}
+            &:nth-child(2) {
+              transform: rotate(105deg) scale(0.7);
+              transform-origin: left;
+            }
+          }
+        }
+      }
+      &:nth-child(2) {
+        top: 100px;
+        left: 100px;
+        .modalBody__statLine {
+          padding: 10px 0 0 0;
+          span {
+            &:nth-child(1) {}
+            &:nth-child(2) {
+              transform: rotate(-120deg) scale(0.4);
+              transform-origin: right;
+            }
+          }
+        }
+      }
+      &:nth-child(3) {
+        top: 230px;
+        left: 27px;
+        .modalBody__statLine {
+          padding: 10px 0 0 0;
+          span {
+            &:nth-child(1) {}
+            &:nth-child(2) {
+              transform: rotate(-120deg) scale(0.7);
+              transform-origin: right;
+            }
+          }
+        }
+      }
+      &:nth-child(4) {
+        top: 440px;
+        left: 160px;
+        transform: rotate(35deg);
+        .modalBody__statPart {
+          font-size: 14px;
+        }
+        .modalBody__statName {
+          font-size: 12px;
+          margin: 5px 0 0 0;
+        }
+        .modalBody__statLine {
+          padding: 10px 0 0 0;
+          span {
+            display: none;
+          }
+        }
+      }
+      &:nth-child(5) {
+        top: 450px;
+        left: 265px;
+        .modalBody__statPart {
+          font-size: 14px;
+        }
+        .modalBody__statName {
+          font-size: 12px;
+          margin: 5px 0 0 0;
+        }
+        .modalBody__statLine {
+          padding: 10px 0 0 0;
+          span {
+            display: none;
+          }
+        }
+      }
+      &:nth-child(6) {
+        top: 400px;
+        left: 355px;
+        transform: rotate(-35deg);
+        .modalBody__statPart {
+          font-size: 14px;
+        }
+        .modalBody__statName {
+          font-size: 12px;
+          margin: 5px 0 0 0;
+        }
+        .modalBody__statLine {
+          padding: 10px 0 0 0;
+          span {
+            display: none;
+          }
+        }
+      }
+      &:nth-child(7) {
+        top: 325px;
+        left: 450px;
+        .modalBody__statLine {
+          padding: 10px 0 0 0;
+          span {
+            &:nth-child(1) {}
+            &:nth-child(2) {
+              transform: rotate(-183deg) scale(1);
+              transform-origin: left;
+            }
+          }
+        }
+      }
+      &:nth-child(8) {
+        top: 150px;
+        left: 440px;
+        .modalBody__statLine {
+          padding: 10px 0 0 0;
+          span {
+            &:nth-child(1) {}
+            &:nth-child(2) {
+              transform: rotate(-210deg) scale(0.5);
+              transform-origin: left;
+            }
+          }
+        }
+      }
       &Part {
         font-family: AvenirNext;
         font-size: 26px;
@@ -154,6 +277,7 @@
         line-height: 1.25;
         letter-spacing: -0.09px;
         color: #fff;
+        margin: 10px 0 0 0;
       }
       &Line {
         span {
@@ -169,7 +293,7 @@
   &Legends {
     display: flex;
     flex-wrap: wrap;
-    margin: 0 0 0 60px;
+    margin: 30px 0 0 60px;
     &__item {
       margin: 10px 0 0 0;
       flex: 0 0 30%;
@@ -196,7 +320,179 @@
 
 }
 @media (max-width:1200px) {
-
+  .modal {
+    width: calc(100vw - 40px);
+    height: 100vh;
+    padding: 20px 10px;
+    overflow-y: scroll;
+    &Body {
+      flex-direction: column;
+      &__col {
+        flex: 0 0 auto;
+        &Title {
+          font-size: 24px;
+        }
+      }
+      &__item {
+        &_line {
+          width: 100%;
+          height: 260px;
+        }
+        &Img {
+          width: 173px;
+          height: 180px;
+          margin: 100px auto 100px;
+        }
+      }
+      &__stat {
+        width: 80px;
+        &:nth-child(1) {
+          top: 18px;
+          // left: calc(50% - 280px);
+          left: calc(50% - 5px);
+          .modalBody__statLine {
+            padding: 10px 0 0 0;
+            span {
+              &:nth-child(1) {}
+              &:nth-child(2) {
+                transform: rotate(105deg) scale(0.4);
+                transform-origin: left;
+              }
+            }
+          }
+        }
+        &:nth-child(2) {
+          top: 40px;
+          left: calc(50% - 140px);
+          .modalBody__statLine {
+            padding: 10px 0 0 0;
+            span {
+              &:nth-child(1) {}
+              &:nth-child(2) {
+                transform: rotate(-120deg) scale(0.3);
+                transform-origin: right;
+              }
+            }
+          }
+        }
+        &:nth-child(3) {
+          top: 140px;
+          left: calc(50% - 140px);
+          .modalBody__statLine {
+            padding: 10px 0 0 0;
+            margin: 0 30px 0 0;
+            span {
+              &:nth-child(1) {
+                transform: scale(0.7);
+              }
+              &:nth-child(2) {
+                transform: translate(-7px, -1px) rotate(-130deg) scale(0.7);
+                transform-origin: right;
+              }
+            }
+          }
+        }
+        &:nth-child(4) {
+          top: 290px;
+          left: calc(50% - 85px);
+          transform: rotate(35deg);
+          .modalBody__statPart {
+            font-size: 9.3px;
+          }
+          .modalBody__statName {
+            font-size: 8px;
+            margin: 2px 0 0 0;
+          }
+          .modalBody__statLine {
+            span {
+              display: none;
+            }
+          }
+        }
+        &:nth-child(5) {
+          top: 295px;
+          left: calc(50% - 20px);
+          .modalBody__statPart {
+            font-size: 9.3px;
+          }
+          .modalBody__statName {
+            font-size: 8px;
+            margin: 3px 0 0 0;
+          }
+          .modalBody__statLine {
+            span {
+              display: none;
+            }
+          }
+        }
+        &:nth-child(6) {
+          top: 260px;
+          left: calc(50% + 40px);
+          transform: rotate(-35deg);
+          .modalBody__statPart {
+            font-size: 9.3px;
+          }
+          .modalBody__statName {
+            font-size: 8px;
+            margin: 3px 0 0 0;
+          }
+          .modalBody__statLine {
+            span {
+              display: none;
+            }
+          }
+        }
+        &:nth-child(7) {
+          top: 190px;
+          left: calc(50% + 100px);
+          .modalBody__statLine {
+            padding: 10px 0 0 0;
+            span {
+              &:nth-child(1) {}
+              &:nth-child(2) {
+                transform: rotate(-183deg) scale(0.7);
+                transform-origin: left;
+              }
+            }
+          }
+        }
+        &:nth-child(8) {
+          top: 70px;
+          left: calc(50% + 100px);
+          .modalBody__statLine {
+            padding: 10px 0 0 0;
+            span {
+              &:nth-child(1) {}
+              &:nth-child(2) {
+                transform: rotate(-210deg) scale(0.5);
+                transform-origin: left;
+              }
+            }
+          }
+        }
+        &Part {
+          font-size: 18px;
+        }
+        &Name {
+          font-size: 10px;
+        }
+        &Line {
+          padding: 5px 0 0 0;
+        }
+      }
+    }
+    &Legends {
+      margin: 20px 0 0 0;
+      padding: 0 0 40px;
+      flex-direction: column;
+      &__item {
+        margin: 15px 0 0 0;
+        &:first-child {
+          margin: 0;
+        }
+      }
+    }
+  }
 }
 @media (max-width:992px) {
   .coin {

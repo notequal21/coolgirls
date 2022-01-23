@@ -1,3 +1,4 @@
+import './Popup.scss'
 import style from './CoolCoin.module.scss'
 import Popup from 'reactjs-popup'
 import { ResponsiveLine } from '@nivo/line'
@@ -8,11 +9,10 @@ import radial from '../../../assets/img/modal/radial.png'
 import closeIco from '../../../assets/img/modal/closeIco.png'
 
 
-
 const data = [
   {
     "id": "Liquidity provision",
-    "color": "#772cd2",
+    "color": "#000",
     "data": [
       {
         "x": "Jan",
@@ -66,7 +66,7 @@ const data = [
   },
   {
     "id": "NFT staking rewards",
-    "color": "#5bace3",
+    "color": "hsl(145, 70%, 50%)",
     "data": [
       {
         "x": "Jan",
@@ -120,7 +120,7 @@ const data = [
   },
   {
     "id": "Play to Earn (Single player rewards)",
-    "color": "#e4178f",
+    "color": "hsl(217, 70%, 50%)",
     "data": [
       {
         "x": "Jan",
@@ -174,11 +174,11 @@ const data = [
   },
   {
     "id": "Airdrop to NFT holders",
-    "color": "#6465de",
+    "color": "hsl(239, 70%, 50%)",
     "data": [
       {
         "x": "Jan",
-        "y": 10
+        "y": 0
       },
       {
         "x": "Feb",
@@ -228,11 +228,11 @@ const data = [
   },
   {
     "id": "Developer tokens (Locked)",
-    "color": "#956bbe",
+    "color": "hsl(234, 70%, 50%)",
     "data": [
       {
         "x": "Jan",
-        "y": 10
+        "y": 0
       },
       {
         "x": "Feb",
@@ -326,7 +326,7 @@ let CoolCoin = () => {
                           <div className={`${style.modalBody__item} ${style.modalBody__item_line}`}>
                             <ResponsiveLine
                               data={data}
-                              margin={{ top: 50, right: 110, bottom: 50, left: 60 }}
+                              margin={{ top: 10, right: 10, bottom: 20, left: 25 }}
                               xScale={{ type: 'point' }}
                               yScale={{
                                 type: 'linear',
@@ -361,14 +361,15 @@ let CoolCoin = () => {
                               lineWidth={1}
                               enablePoints={false}
                               pointSize={10}
-                              pointColor={{ theme: 'background' }}
+                              colors={['#772cd2', '#5bace3', '#e4178f', '#6465de', '#956bbe']}
+                              colorBy='index'
                               pointBorderWidth={7}
                               pointBorderColor={{ from: 'serieColor' }}
                               pointLabelYOffset={24}
                               enableCrosshair={false}
                               useMesh={true}
-                              legends={[]}
-                              height='330'
+                            // height='380'
+                            // width='560'
                             />
                             <div className={style.modalLegends}>
                               <LegendItem color="#772cd2" name='Liquidity provision' />
