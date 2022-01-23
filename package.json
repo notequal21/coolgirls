@@ -4,6 +4,8 @@
   "private": true,
   "homepage": "https://notequal21.github.io/coolgirls",
   "dependencies": {
+    "@nivo/core": "^0.79.0",
+    "@nivo/line": "^0.79.1",
     "@testing-library/jest-dom": "^5.16.1",
     "@testing-library/react": "^12.1.2",
     "@testing-library/user-event": "^13.5.0",
@@ -13,6 +15,7 @@
     "react-router-dom": "^6.2.1",
     "react-scripts": "5.0.0",
     "react-select": "^5.2.2",
+    "reactjs-popup": "^2.0.5",
     "sass": "^1.49.0",
     "swiper": "^7.4.1",
     "web-vitals": "^2.1.3"
