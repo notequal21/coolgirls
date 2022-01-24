@@ -3,9 +3,9 @@ import Select from 'react-select'
 import './Selects.scss'
 
 const optionsBG = [
-  { value: 'WHITE', label: 'WHITE - 58%' },
-  { value: 'GRAPHITE', label: 'GRAPHITE - 1%' },
-  { value: 'BLUE', label: 'BLUE - 1.5%' }
+  { value: 'WHITE#58%', label: 'WHITE - 58%' },
+  { value: 'GRAPHITE#1%', label: 'GRAPHITE - 1%' },
+  { value: 'BLUE#1.5%', label: 'BLUE - 1.5%' }
 ]
 
 let SelectItem = (props) => {
@@ -45,7 +45,12 @@ let Builder = () => {
             </div>
             <div className={style.builderBody__col}>
               <div className={style.builderBody__preview}>
-
+                <div className={style.builderBody__previewItem_bg}>
+                  <img src="/coolgirls/imgs/builder/layers/Background/BLUE_SKY.PNG" alt="" />
+                </div>
+                <div className={style.builderBody__previewItem_body}>
+                  <img src="/coolgirls/imgs/builder/layers/Body/BLOODY.PNG" alt="" />
+                </div>
               </div>
             </div>
             <div className={style.builderBody__col}>
