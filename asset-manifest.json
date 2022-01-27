@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/coolgirls/static/css/main.c8ba74bb.css",
-    "main.js": "/coolgirls/static/js/main.e4953be7.js",
+    "main.js": "/coolgirls/static/js/main.b762c1a2.js",
     "static/js/787.edd59a96.chunk.js": "/coolgirls/static/js/787.edd59a96.chunk.js",
     "static/media/img01.png": "/coolgirls/static/media/img01.550ad2630e52b1ddedd4.png",
     "static/media/img02.png": "/coolgirls/static/media/img02.50561ee5a271ac91c3b6.png",
@@ -20,11 +20,11 @@
     "static/media/radial.png": "/coolgirls/static/media/radial.003128fb997d845a7f34.png",
     "index.html": "/coolgirls/index.html",
     "main.c8ba74bb.css.map": "/coolgirls/static/css/main.c8ba74bb.css.map",
-    "main.e4953be7.js.map": "/coolgirls/static/js/main.e4953be7.js.map",
+    "main.b762c1a2.js.map": "/coolgirls/static/js/main.b762c1a2.js.map",
     "787.edd59a96.chunk.js.map": "/coolgirls/static/js/787.edd59a96.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c8ba74bb.css",
-    "static/js/main.e4953be7.js"
+    "static/js/main.b762c1a2.js"
   ]
 }
