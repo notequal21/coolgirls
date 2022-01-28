@@ -12,6 +12,7 @@
       padding: 0 0 100% 0;
       background-image: linear-gradient(to bottom, #3c2f5a, #3f2c54);
       position: relative;
+
       &Item {
         position: absolute;
         top: 0;
@@ -23,6 +24,30 @@
         }
         &_body {
           z-index: 1;
+        }
+        &_bottom {
+          z-index: 2;
+        }
+        &_eyes {
+          z-index: 3;
+        }
+        &_gloves {
+          z-index: 4;
+        }
+        &_hair {
+          z-index: 5;
+        }
+        &_item {
+          z-index: 6;
+        }
+        &_legs {
+          z-index: 7;
+        }
+        &_month {
+          z-index: 8;
+        }
+        &_top {
+          z-index: 9;
         }
       }
       img {
