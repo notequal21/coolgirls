@@ -6,6 +6,7 @@ import { useState } from 'react'
 const optionsBg = [
   { value: 'BLUE_SKY#50%', label: 'BLUE_SKY - 50%' },
   { value: 'DRAIN#10%', label: 'DRAIN - 10%' },
+  { value: 'DRAIN#4%', label: 'DRAIN - 4%' },
   { value: 'TWILIGHT#1%', label: 'TWILIGHT - 1%' },
 ]
 
@@ -67,11 +68,19 @@ const optionsTop = [
 ]
 
 let SelectItem = ({ setItem, ...props }) => {
+
+  const [itemRare, setItemRare] = useState('')
+
   return (
     <div className={style.builderSelects__item}>
       <div className={style.builderSelects__itemName}>
         {props.name}
-        <span className={style.builderSelects__itemLabel}></span>
+        <span className={`${style.builderSelects__itemLabel} 
+        ${itemRare === 'legendary' ? style.builderSelects__itemLabel_legendary : ''}
+        ${itemRare === 'upper rare' ? style.builderSelects__itemLabel_uprare : ''}
+        ${itemRare === 'rare' ? style.builderSelects__itemLabel_rare : ''}
+        ${itemRare === 'common' ? style.builderSelects__itemLabel_common : ''}
+        `}>{itemRare}</span>
       </div>
       <Select
         className={style.select}
@@ -81,6 +90,17 @@ let SelectItem = ({ setItem, ...props }) => {
         options={props.options}
         onChange={(value) => {
           setItem(value.value.split('#')[0])
+          setItemRare(() => {
+            if (value.value.split('#')[1].split('%')[0] <= 1) {
+              return 'legendary'
+            } else if (value.value.split('#')[1].split('%')[0] <= 5 && value.value.split('#')[1].split('%')[0] > 1) {
+              return 'upper rare'
+            } else if (value.value.split('#')[1].split('%')[0] <= 15 && value.value.split('#')[1].split('%')[0] > 5) {
+              return 'rare'
+            } else {
+              return 'common'
+            }
+          })
         }}
       />
     </div>

@@ -70,18 +70,17 @@
       &Name {
         display: flex;
         align-items: center;
-        opacity: 0.4;
         font-family: AvenirNext;
         font-size: 10px;
         font-weight: 500;
         letter-spacing: -0.09px;
-        color: #fff;
+        color: rgba($color: #fff, $alpha: 0.4);
         text-transform: uppercase;
         margin: 0 0 0 15px;
       }
       &Label {
         margin: 0 0 0 10px;
-        padding: 3px 10px;
+        padding: 4px 10px 3px;
         font-family: AvenirNext;
         font-size: 9px;
         font-weight: 600;
@@ -89,6 +88,22 @@
         color: #fff;
         border-radius: 10px;
         display: inline-block;
+        &_legendary {
+          border: solid 1px rgba(0, 0, 0, 0.2);
+          background-color: #6D96D7;
+        }
+        &_uprare {
+          border: solid 1px rgba(0, 0, 0, 0.2);
+          background-color: #7435D4;
+        }
+        &_rare {
+          border: solid 1px rgba(0, 0, 0, 0.2);
+          background-color: #D51A98;
+        }
+        &_common {
+          border: solid 1px rgba(0, 0, 0, 0.2);
+          background-color: #261D3C;
+        }
       }
     }
   }
