@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/coolgirls/static/css/main.c8ba74bb.css",
-    "main.js": "/coolgirls/static/js/main.b762c1a2.js",
+    "main.css": "/coolgirls/static/css/main.2e53483f.css",
+    "main.js": "/coolgirls/static/js/main.43dd1b84.js",
     "static/js/787.edd59a96.chunk.js": "/coolgirls/static/js/787.edd59a96.chunk.js",
     "static/media/img01.png": "/coolgirls/static/media/img01.550ad2630e52b1ddedd4.png",
     "static/media/img02.png": "/coolgirls/static/media/img02.50561ee5a271ac91c3b6.png",
@@ -9,6 +9,7 @@
     "static/media/AvenirNextW05HeavyItalic.woff": "/coolgirls/static/media/AvenirNextW05HeavyItalic.e51a4705246693c57024.woff",
     "static/media/img@2x.png": "/coolgirls/static/media/img@2x.1eaad1e0855a26d1b465.png",
     "static/media/avenirnextcyr-heavy.woff": "/coolgirls/static/media/avenirnextcyr-heavy.d8a3b2a608f8744d6e80.woff",
+    "static/media/bg@2x.png": "/coolgirls/static/media/bg@2x.a1fcc7aeded05c34bb96.png",
     "static/media/AnyConv.com__Metropolis-MediumItalic.woff": "/coolgirls/static/media/AnyConv.com__Metropolis-MediumItalic.0443aaf535044e755b1f.woff",
     "static/media/AnyConv.com__Metropolis-BoldItalic.woff": "/coolgirls/static/media/AnyConv.com__Metropolis-BoldItalic.130ad93846c8f83a9fc5.woff",
     "static/media/AnyConv.com__Metropolis-SemiBoldItalic.woff": "/coolgirls/static/media/AnyConv.com__Metropolis-SemiBoldItalic.73378e49e88dbd32d689.woff",
@@ -19,12 +20,12 @@
     "static/media/AnyConv.com__Metropolis-Regular.woff": "/coolgirls/static/media/AnyConv.com__Metropolis-Regular.2088a6d54e2e1738aa22.woff",
     "static/media/radial.png": "/coolgirls/static/media/radial.003128fb997d845a7f34.png",
     "index.html": "/coolgirls/index.html",
-    "main.c8ba74bb.css.map": "/coolgirls/static/css/main.c8ba74bb.css.map",
-    "main.b762c1a2.js.map": "/coolgirls/static/js/main.b762c1a2.js.map",
+    "main.2e53483f.css.map": "/coolgirls/static/css/main.2e53483f.css.map",
+    "main.43dd1b84.js.map": "/coolgirls/static/js/main.43dd1b84.js.map",
     "787.edd59a96.chunk.js.map": "/coolgirls/static/js/787.edd59a96.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c8ba74bb.css",
-    "static/js/main.b762c1a2.js"
+    "static/css/main.2e53483f.css",
+    "static/js/main.43dd1b84.js"
   ]
 }
