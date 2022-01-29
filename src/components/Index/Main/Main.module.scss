@@ -13,7 +13,11 @@
         text-align: center;
         color: #fff;
         text-transform: uppercase;
-
+        .br {
+          &__mobile {
+            display: none;
+          }
+        }
         span {
           background: rgb(178,77,171);
           background: linear-gradient(90deg, rgba(178,77,171,1) -20%, rgba(69,206,241,1) 100%);
