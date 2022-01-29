@@ -21,7 +21,7 @@ const optionsBody = [
   { value: 'WIGGA#22%', label: 'WIGGA - 22%' },
   { value: 'SEWED#3%', label: 'SEWED - 3%' },
   { value: 'WHITE#58%', label: 'WHITE - 58%' },
-  { value: 'TATOOEDBLUE#10%', label: 'TATOOED - 10%' },
+  { value: 'TATOOED#10%', label: 'TATOOED - 10%' },
 ]
 
 const optionsBottom = [
@@ -29,7 +29,7 @@ const optionsBottom = [
   { value: 'SKIRT#9%', label: 'SKIRT - 9%' },
   { value: 'BLACK_BRIEFS#18%', label: 'BLACK BRIEFS - 18%' },
   { value: 'GREEN_BRIEFS#18%', label: 'GREEN BRIEFS - 18%' },
-  { value: 'PURPLE TANGA#18%', label: 'PURPLE TANGA - 18%' },
+  { value: 'PURPLE_TANGA#18%', label: 'PURPLE TANGA - 18%' },
   { value: 'CENSORED#9%', label: 'CENSORED - 9%' },
   { value: 'TANGA#18%', label: 'TANGA - 18%' },
 ]
@@ -46,10 +46,10 @@ const optionsEyes = [
 const optionsGloves = [
   { value: 'GREEN_GLOVES#13%', label: 'GREEN GLOVES - 13%' },
   { value: 'NONE#53%', label: 'NONE - 53%' },
-  { value: 'PURPLE GLOVES#4%', label: 'PURPLE GLOVES - 4%' },
-  { value: 'RED GLOVES#13%', label: 'RED GLOVES - 13%' },
-  { value: 'NEON GLOVES#4%', label: 'NEON GLOVES - 4%' },
-  { value: 'BLUE GLOVES#13%', label: 'BLUE GLOVES - 13%' },
+  { value: 'PURPLE_GLOVES#4%', label: 'PURPLE GLOVES - 4%' },
+  { value: 'RED_GLOVES#13%', label: 'RED GLOVES - 13%' },
+  { value: 'NEON_GLOVES#4%', label: 'NEON GLOVES - 4%' },
+  { value: 'BLUE_GLOVES#13%', label: 'BLUE GLOVES - 13%' },
 ]
 
 const optionsHair = [
@@ -72,7 +72,7 @@ const optionsHair = [
 
 const optionsItem = [
   { value: 'NONE#93%', label: 'NONE - 93%' },
-  { value: 'DRAKONCHIK#1%', label: 'DRAKONCHIK - 1%' },
+  { value: 'DRAKARIS#1%', label: 'DRAKARIS - 1%' },
   { value: 'KATANA#2%', label: 'KATANA - 2%' },
   { value: 'BLOSSOM#3%', label: 'BLOSSOM - 3%' },
   { value: 'MIAU#1%', label: 'MIAU - 1%' },
