@@ -10,6 +10,82 @@ import SwiperCore, {
 SwiperCore.use([EffectCreative]);
 
 let GirlsSlider = () => {
+
+  const slidesContent = [
+    {
+      imgUrl: 'coolgirls/IMG.png',
+      name: 'Cool Girl #522',
+      rare: 'Rare+',
+      date: 'December 25th'
+    },
+    {
+      imgUrl: 'coolgirls/IMG.png',
+      name: 'Cool Girl #52',
+      rare: 'Rare+',
+      date: 'December 20th'
+    },
+    {
+      imgUrl: 'coolgirls/IMG.png',
+      name: 'Cool Girl #22',
+      rare: 'Rare+',
+      date: 'December 21th'
+    },
+    {
+      imgUrl: 'coolgirls/IMG.png',
+      name: 'Cool Girl #51',
+      rare: 'Rare+',
+      date: 'December 22th'
+    },
+    {
+      imgUrl: 'coolgirls/IMG.png',
+      name: 'Cool Girl #42',
+      rare: 'Rare+',
+      date: 'December 23th'
+    },
+    {
+      imgUrl: 'coolgirls/IMG.png',
+      name: 'Cool Girl #622',
+      rare: 'Rare+',
+      date: 'December 24th'
+    },
+    {
+      imgUrl: 'coolgirls/IMG.png',
+      name: 'Cool Girl #777',
+      rare: 'Rare+',
+      date: 'December 26th'
+    },
+  ]
+
+  const slides = slidesContent.map((slide) => <SwiperSlide className={style.slider__slide}>
+    {({ isActive }) => (
+      <div className={`${style.sliderItem} ${isActive ? style.active : ''}`}>
+        <div className={`${style.sliderItem__glow}`}></div>
+        <div className={style.sliderItem__img}>
+          <img src={slide.imgUrl} alt="" />
+        </div>
+        <div className={`${style.sliderItem__content} ${isActive ? style.active : ''}`}>
+          <div className={style.sliderItem__name}>
+            {slide.name}
+          </div>
+          <div className={style.sliderItem__info}>
+            <div className={style.sliderItem__infoItem}>
+              Rarity needed
+              <span>
+                {slide.rare}
+              </span>
+            </div>
+            <div className={style.sliderItem__infoItem}>
+              Hatch on
+              <span>
+                {slide.date}
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    )}
+  </SwiperSlide>)
+
   return (
     <>
       <div className={`${style.slider} girlsSlider`}>
@@ -41,154 +117,7 @@ let GirlsSlider = () => {
           }}
         // onSwiper={(swiper) => console.log(swiper)}
         >
-          <SwiperSlide className={style.slider__slide}>
-            {({ isActive }) => (
-              <div className={`${style.sliderItem} ${isActive ? style.active : ''}`}>
-                <div className={`${style.sliderItem__glow}`}></div>
-                <div className={style.sliderItem__img}>
-
-                </div>
-                <div className={`${style.sliderItem__content} ${isActive ? style.active : ''}`}>
-                  <div className={style.sliderItem__name}>
-                    Cool Girl #522
-                  </div>
-                  <div className={style.sliderItem__info}>
-                    <div className={style.sliderItem__infoItem}>
-                      Rarity needed
-                      <span>
-                        Rare+
-                      </span>
-                    </div>
-                    <div className={style.sliderItem__infoItem}>
-                      Hatch on
-                      <span>
-                        December 25th
-                      </span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            )}
-          </SwiperSlide>
-
-
-          <SwiperSlide className={style.slider__slide}>
-            {({ isActive }) => (
-              <div className={`${style.sliderItem} ${isActive ? style.active : ''}`}>
-                <div className={`${style.sliderItem__glow}`}></div>
-                <div className={style.sliderItem__img}>
-
-                </div>
-                <div className={`${style.sliderItem__content} ${isActive ? style.active : ''}`}>
-                  <div className={style.sliderItem__name}>
-                    Cool Girl #522
-                  </div>
-                  <div className={style.sliderItem__info}>
-                    <div className={style.sliderItem__infoItem}>
-                      Rarity needed
-                      <span>
-                        Rare+
-                      </span>
-                    </div>
-                    <div className={style.sliderItem__infoItem}>
-                      Hatch on
-                      <span>
-                        December 25th
-                      </span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            )}
-          </SwiperSlide>
-          <SwiperSlide className={style.slider__slide}>
-            {({ isActive }) => (
-              <div className={`${style.sliderItem} ${isActive ? style.active : ''}`}>
-                <div className={`${style.sliderItem__glow}`}></div>
-                <div className={style.sliderItem__img}>
-
-                </div>
-                <div className={`${style.sliderItem__content} ${isActive ? style.active : ''}`}>
-                  <div className={style.sliderItem__name}>
-                    Cool Girl #522
-                  </div>
-                  <div className={style.sliderItem__info}>
-                    <div className={style.sliderItem__infoItem}>
-                      Rarity needed
-                      <span>
-                        Rare+
-                      </span>
-                    </div>
-                    <div className={style.sliderItem__infoItem}>
-                      Hatch on
-                      <span>
-                        December 25th
-                      </span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            )}
-          </SwiperSlide>
-          <SwiperSlide className={style.slider__slide}>
-            {({ isActive }) => (
-              <div className={`${style.sliderItem} ${isActive ? style.active : ''}`}>
-                <div className={`${style.sliderItem__glow}`}></div>
-                <div className={style.sliderItem__img}>
-
-                </div>
-                <div className={`${style.sliderItem__content} ${isActive ? style.active : ''}`}>
-                  <div className={style.sliderItem__name}>
-                    Cool Girl #522
-                  </div>
-                  <div className={style.sliderItem__info}>
-                    <div className={style.sliderItem__infoItem}>
-                      Rarity needed
-                      <span>
-                        Rare+
-                      </span>
-                    </div>
-                    <div className={style.sliderItem__infoItem}>
-                      Hatch on
-                      <span>
-                        December 25th
-                      </span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            )}
-          </SwiperSlide>
-          <SwiperSlide className={style.slider__slide}>
-            {({ isActive }) => (
-              <div className={`${style.sliderItem} ${isActive ? style.active : ''}`}>
-                <div className={`${style.sliderItem__glow}`}></div>
-                <div className={style.sliderItem__img}>
-
-                </div>
-                <div className={`${style.sliderItem__content} ${isActive ? style.active : ''}`}>
-                  <div className={style.sliderItem__name}>
-                    Cool Girl #522
-                  </div>
-                  <div className={style.sliderItem__info}>
-                    <div className={style.sliderItem__infoItem}>
-                      Rarity needed
-                      <span>
-                        Rare+
-                      </span>
-                    </div>
-                    <div className={style.sliderItem__infoItem}>
-                      Hatch on
-                      <span>
-                        December 25th
-                      </span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            )}
-          </SwiperSlide>
-
+          {slides}
         </Swiper>
       </div>
     </>
