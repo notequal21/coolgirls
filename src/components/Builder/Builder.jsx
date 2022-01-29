@@ -4,46 +4,78 @@ import './Selects.scss'
 import { useState } from 'react'
 
 const optionsBg = [
-  { value: 'BLUE_SKY#50%', label: 'BLUE_SKY - 50%' },
-  { value: 'DRAIN#10%', label: 'DRAIN - 10%' },
-  { value: 'DRAIN#4%', label: 'DRAIN - 4%' },
-  { value: 'TWILIGHT#1%', label: 'TWILIGHT - 1%' },
+  { value: 'TWILIGHT#17%', label: 'TWILIGHT - 17%' },
+  { value: 'BLUE_SKY#17%', label: 'BLUE SKY  - 17%' },
+  { value: 'SAKURA_FALL#8.5%', label: 'SAKURA FALL - 8.5%' },
+  { value: 'SUNSET#17%', label: 'SUNSET - 17%' },
+  { value: 'MARS_SKY#5%', label: 'MARS SKY - 5%' },
+  { value: 'DRAIN#17%', label: 'DRAIN - 17%' },
+  { value: 'RAIN#17%', label: 'RAIN - 17%' },
+  { value: 'SKY_DRAIN#5%', label: 'SKY DRAIN - 1.5%' },
 ]
 
 const optionsBody = [
-  { value: 'BLOODY#50%', label: 'BLOODY - 50%' },
-  { value: 'BLUE#10%', label: 'BLUE - 10%' },
   { value: 'GRAPHITE#1%', label: 'GRAPHITE - 1%' },
+  { value: 'BLOODY#4.5%', label: 'BLOODY - 4.5%' },
+  { value: 'BLUE#1.5%', label: 'BLUE - 1.5%' },
+  { value: 'WIGGA#22%', label: 'WIGGA - 22%' },
+  { value: 'SEWED#3%', label: 'SEWED - 3%' },
+  { value: 'WHITE#58%', label: 'WHITE - 58%' },
+  { value: 'TATOOEDBLUE#10%', label: 'TATOOED - 10%' },
 ]
 
 const optionsBottom = [
-  { value: 'BLACK_BRIEFS#50%', label: 'BLACK BRIEFS - 50%' },
-  { value: 'CENSORED#10%', label: 'CENSORED - 10%' },
-  { value: 'GREEN_BRIEFS#1%', label: 'GREEN BRIEFS - 1%' },
+  { value: 'VALENTINE_TANGA#9%', label: 'VALENTINE TANGA - 9%' },
+  { value: 'SKIRT#9%', label: 'SKIRT - 9%' },
+  { value: 'BLACK_BRIEFS#18%', label: 'BLACK BRIEFS - 18%' },
+  { value: 'GREEN_BRIEFS#18%', label: 'GREEN BRIEFS - 18%' },
+  { value: 'PURPLE TANGA#18%', label: 'PURPLE TANGA - 18%' },
+  { value: 'CENSORED#9%', label: 'CENSORED - 9%' },
+  { value: 'TANGA#18%', label: 'TANGA - 18%' },
 ]
 
 const optionsEyes = [
-  { value: 'CATWOMAN#50%', label: 'CATWOMAN - 50%' },
-  { value: 'EYES#10%', label: 'EYES - 10%' },
+  { value: 'VIOLET_MASK#5%', label: 'VIOLET MASK - 5%' },
+  { value: 'ROSE_MASK#5%', label: 'ROSE MASK - 5%' },
+  { value: 'WELDER#5%', label: 'WELDER - 5%' },
+  { value: 'CATWOMAN#5%', label: 'CATWOMAN - 5%' },
+  { value: 'EYES#80%', label: 'EYES - 80%' },
   { value: 'RINNEGAN#1%', label: 'RINNEGAN - 1%' },
 ]
 
 const optionsGloves = [
-  { value: 'BLUE_GLOVES#50%', label: 'BLUE GLOVES - 50%' },
-  { value: 'GREEN_GLOVES#10%', label: 'GREEN GLOVES - 10%' },
-  { value: 'NEON_GLOVES#1%', label: 'NEON GLOVES - 1%' },
+  { value: 'GREEN_GLOVES#13%', label: 'GREEN GLOVES - 13%' },
+  { value: 'NONE#53%', label: 'NONE - 53%' },
+  { value: 'PURPLE GLOVES#4%', label: 'PURPLE GLOVES - 4%' },
+  { value: 'RED GLOVES#13%', label: 'RED GLOVES - 13%' },
+  { value: 'NEON GLOVES#4%', label: 'NEON GLOVES - 4%' },
+  { value: 'BLUE GLOVES#13%', label: 'BLUE GLOVES - 13%' },
 ]
 
 const optionsHair = [
-  { value: 'BOW#50%', label: 'BOW - 50%' },
-  { value: 'CRYSTAL_BLONDE#10%', label: 'CRYSTAL BLONDE - 10%' },
-  { value: 'DEEP_PURPLE#1%', label: 'DEEP PURPLE - 1%' },
+  { value: 'NINJA#1%', label: 'NINJA - 1%' },
+  { value: 'PANDA#1%', label: 'PANDA - 1%' },
+  { value: 'DEEP_PURPLE#0.5%', label: 'DEEP PURPLE - 0.5%' },
+  { value: 'PINK_FLOYD#0.5%', label: 'PINK FLOYD - 0.5%' },
+  { value: 'TOMATO_HAIRCUT#14%', label: 'TOMATO HAIRCUT - 14%' },
+  { value: 'LOVE_NINJA#6%', label: 'LOVE NINJA - 6%' },
+  { value: 'MELOMAN#1%', label: 'MELOMAN - 1%' },
+  { value: 'KONOCHA#6%', label: 'KONOCHA - 6%' },
+  { value: 'CRYSTAL_BLONDE#14%', label: 'CRYSTAL BLONDE - 14%' },
+  { value: 'KITTY#14%', label: 'KITTY - 14%' },
+  { value: 'PURPLE_CRYSTAL#14%', label: 'PURPLE CRYSTAL - 14%' },
+  { value: 'GREEN_SATAN#0.5%', label: 'GREEN SATAN - 0.5%' },
+  { value: 'BOW#14%', label: 'BOW - 14%' },
+  { value: 'LIME_HAIRCUT#13%', label: 'LIME HAIRCUT - 13%' },
+  { value: 'VIOLET_STAR#0.5%', label: 'VIOLET STAR - 0.5%' },
 ]
 
 const optionsItem = [
-  { value: 'BLOSSOM#50%', label: 'BLOSSOM - 50%' },
-  { value: 'DRAKARIS#10%', label: 'DRAKARIS - 10%' },
-  { value: 'KATANA#1%', label: 'KATANA - 1%' },
+  { value: 'NONE#93%', label: 'NONE - 93%' },
+  { value: 'DRAKONCHIK#1%', label: 'DRAKONCHIK - 1%' },
+  { value: 'KATANA#2%', label: 'KATANA - 2%' },
+  { value: 'BLOSSOM#3%', label: 'BLOSSOM - 3%' },
+  { value: 'MIAU#1%', label: 'MIAU - 1%' },
 ]
 
 const optionsLegs = [
