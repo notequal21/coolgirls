@@ -44,9 +44,12 @@ let CoolGirls = () => {
                     </span>
                   </div>
                 </div>
-                <div className={style.girlsBody__itemBtn}>
-                  Let’s go
+                <div className={`${style.girlsBody__itemBtn} ${style.girlsBody__itemBtn_soon}`}>
+                  Soon…
                 </div>
+                {/* <div className={style.girlsBody__itemBtn}>
+                  Let’s go
+                </div> */}
               </div>
             </div>
             <div className={style.girlsBody__item}>
