@@ -4,8 +4,9 @@ import 'swiper/css';
 import './sliderStyles.scss';
 import "swiper/css/effect-creative"
 import SwiperCore, {
-  EffectCreative
+  EffectCreative,
 } from 'swiper';
+import { Autoplay } from "swiper";
 
 SwiperCore.use([EffectCreative]);
 
@@ -165,6 +166,11 @@ let GirlsSlider = () => {
           // onSlideChange={(swiper) => console.log(swiper, swiper.activeIndex, swiper.slides[swiper.activeIndex - 2], swiper.slides[swiper.activeIndex + 2].style)}
           // effect={'creative'}
           // limitProgress={3}
+          autoplay={{
+            delay: 2000,
+            disableOnInteraction: false,
+          }}
+          modules={[Autoplay]}
           creativeEffect={{
             prev: {
               translate: ['calc(-100% - 50px)', '10%', 0],
