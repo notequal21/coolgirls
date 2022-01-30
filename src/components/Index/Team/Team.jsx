@@ -1,4 +1,5 @@
 import style from './Team.module.scss'
+import { Element } from 'react-scroll'
 
 // imgs
 import img from '../../../assets/img/coolGirls/img01.png'
@@ -6,7 +7,7 @@ import img from '../../../assets/img/coolGirls/img01.png'
 let Team = () => {
   return (
     <>
-      <div className={style.team}>
+      <Element name='team' className={style.team}>
         <div className="container">
           <div className={style.team__title}>
             Team
@@ -82,7 +83,7 @@ let Team = () => {
             </div>
           </div>
         </div>
-      </div>
+      </Element>
     </>
   )
 }

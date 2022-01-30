@@ -5,6 +5,9 @@ import { useState } from 'react'
 // import IcoRoadmap from '../../assets/img/IcoRoadmap'
 // import IcoTeam from '../../assets/img/IcoTeam'
 import style from './Header.module.scss'
+import { Link } from 'react-router-dom'
+import * as Scroll from 'react-scroll';
+import { Link as LinkAnc, Button, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
 
 // imgs
 import builderIco from '../../assets/img/header/codepen@2x.png'
@@ -13,7 +16,6 @@ import IcoFaq from '../../assets/img/header/help-circle@2x.png'
 import IcoCoolCoin from '../../assets/img/header/oval-copy-21@2x.png'
 import IcoRoadmap from '../../assets/img/header/line@2x.png'
 import IcoAbout from '../../assets/img/header/info@2x.png'
-import { Link } from 'react-router-dom'
 
 let Header = () => {
 
@@ -33,29 +35,34 @@ let Header = () => {
             <nav className={`${style.headerBody__menu} ${menuOpen ? style.active : ''}`}>
               <Link to='' className={`${style.headerBody__menuItem}`}>
                 {/* <IcoAbout /> */}
+                <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="home" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="svg-inline--fa fa-home fa-w-18 fa-9x"><path fill="currentColor" d="M280.37 148.26L96 300.11V464a16 16 0 0 0 16 16l112.06-.29a16 16 0 0 0 15.92-16V368a16 16 0 0 1 16-16h64a16 16 0 0 1 16 16v95.64a16 16 0 0 0 16 16.05L464 480a16 16 0 0 0 16-16V300L295.67 148.26a12.19 12.19 0 0 0-15.3 0zM571.6 251.47L488 182.56V44.05a12 12 0 0 0-12-12h-56a12 12 0 0 0-12 12v72.61L318.47 43a48 48 0 0 0-61 0L4.34 251.47a12 12 0 0 0-1.6 16.9l25.5 31A12 12 0 0 0 45.15 301l235.22-193.74a12.19 12.19 0 0 1 15.3 0L530.9 301a12 12 0 0 0 16.9-1.6l25.5-31a12 12 0 0 0-1.7-16.93z" class=""></path></svg>
+                Home
+              </Link>
+              <Link to='' className={`${style.headerBody__menuItem}`}>
+                {/* <IcoAbout /> */}
                 <img src={IcoAbout} alt="" />
                 About
               </Link>
-              <Link to='' className={`${style.headerBody__menuItem}`}>
+              <LinkAnc to='roadmap' spy={true} smooth={true} offset={-20} duration={300} className={`${style.headerBody__menuItem}`}>
                 {/* <IcoRoadmap /> */}
                 <img src={IcoRoadmap} alt="" />
                 Roadmap
-              </Link>
-              <Link to='' className={`${style.headerBody__menuItem}`}>
+              </LinkAnc>
+              <LinkAnc to='coolcoin' spy={true} smooth={true} offset={-20} duration={300} className={`${style.headerBody__menuItem}`}>
                 {/* <IcoCoolCoin /> */}
                 <img src={IcoCoolCoin} alt="" />
                 Cool coin
-              </Link>
-              <Link to='' className={`${style.headerBody__menuItem}`}>
+              </LinkAnc>
+              <LinkAnc to='faq' spy={true} smooth={true} offset={-20} duration={300} className={`${style.headerBody__menuItem}`}>
                 {/* <IcoFaq /> */}
                 <img src={IcoFaq} alt="" />
                 FAQ
-              </Link>
-              <Link to='' className={`${style.headerBody__menuItem}`}>
+              </LinkAnc>
+              <LinkAnc to='team' spy={true} smooth={true} offset={-20} duration={300} className={`${style.headerBody__menuItem}`}>
                 {/* <IcoTeam /> */}
                 <img src={IcoTeam} alt="" />
                 Team
-              </Link>
+              </LinkAnc>
               <Link to='builder' className={`${style.headerBody__menuItem}`}>
                 {/* <IcoCoolCoin /> */}
                 <img src={builderIco} alt="" />

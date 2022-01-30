@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import style from './Faqs.module.scss'
+import { Element } from 'react-scroll'
 
 let Faqs = () => {
 
@@ -28,7 +29,7 @@ let Faqs = () => {
 
   return (
     <>
-      <div className={style.faqs}>
+      <Element name='faq' className={style.faqs}>
         <div className="container">
           <div className={style.faqs__title}>
             FAQ'S
@@ -39,7 +40,7 @@ let Faqs = () => {
             ))}
           </div>
         </div>
-      </div>
+      </Element>
     </>
   )
 }

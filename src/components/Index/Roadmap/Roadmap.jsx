@@ -3,6 +3,8 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import { useEffect, useState } from 'react';
 
+import { Element } from 'react-scroll'
+
 // imgs
 import bgLine from '../../../assets/img/roadmap/bg-line@2x.png'
 import bg from '../../../assets/img/roadmap/bg@2x.png'
@@ -27,7 +29,7 @@ let Roadmap = () => {
   })
   return (
     <>
-      <div className={style.roadmap}>
+      <Element name='roadmap' className={style.roadmap}>
         <div className="container">
           <div className={style.roadmapText}>
             <div className={style.roadmapText__title}>
@@ -132,7 +134,7 @@ let Roadmap = () => {
                     Issue of Cool Coin and airdrop to the NFT holders
                   </div>
                   <div className={`${style.roadmapBody__planItem} ${style.roadmapBody__planItem_soon}`}>
-                    Release of NFT staking pools
+                    Release of NFT staking pools <br /> (February 21, 2022)
                   </div>
                 </div>
               </SwiperSlide>
@@ -146,14 +148,14 @@ let Roadmap = () => {
                     2.0 SOL
                   </div>
                   <div className={style.roadmapBody__itemCount}>
-                    777 cool girl
+                    999 cool girls
                   </div>
                   <div className={style.roadmapBody__itemDesc}>
                     The second mining round is the penultimate mint before COOL GIRLS will be officially listed on the most reputable SOLANA blockchain marketplaces. In the 3rd minting round 999 COOL GIRLS will be minted for 2 SOL each
                   </div>
                   <div className={style.roadmapBody__itemDivider}></div>
                   <div className={`${style.roadmapBody__itemDate}`}>
-                    Start after January 8, 2022
+                    Start after January 8, 2022 <br /> (March 1, 2022)
                   </div>
                 </div>
                 <div className={style.roadmapBody__plan}>
@@ -165,8 +167,8 @@ let Roadmap = () => {
               <SwiperSlide className={`${style.roadmapBody__itemContent}`}>
                 <div className={style.roadmapBody__itemCircle}></div>
                 <div className={`${style.roadmapBody__item} ${style.roadmapBody__item_soon}`}>
-                  <div className={style.roadmapBody__itemTitle}>
-                    listed on marketplaces
+                  <div className={style.roadmapBody__itemPrice}>
+                    3 SOL/ 669
                   </div>
                   <div className={style.roadmapBody__itemDesc}>
                     After the last minting round in the next couple of days, the COOL GIRLS collection will be listed on marketplaces such as DigitalEyes, and MagicEden. We are currently in contact with Solanart so it is also a possibility
@@ -259,7 +261,7 @@ let Roadmap = () => {
                       Issue of Cool Coin and airdrop to the NFT holders
                     </div>
                     <div className={`${style.roadmapBody__planItem} ${style.roadmapBody__planItem_soon}`}>
-                      Release of NFT staking pools
+                      Release of NFT staking pools <br /> (February 21, 2022)
                     </div>
                   </div>
                 </div>
@@ -272,7 +274,7 @@ let Roadmap = () => {
                     2.0 SOL
                   </div>
                   <div className={style.roadmapBody__itemCount}>
-                    777 cool girl
+                    999 cool girls
                   </div>
                   <div className={style.roadmapBody__itemDesc}>
                     The second mining round is the penultimate mint before COOL GIRLS will be officially listed on the most reputable SOLANA blockchain marketplaces. In the 3rd minting round 999 COOL GIRLS will be minted for 2 SOL each
@@ -283,14 +285,17 @@ let Roadmap = () => {
                   </div>
                   <div className={style.roadmapBody__plan}>
                     <div className={`${style.roadmapBody__planItem} ${style.roadmapBody__planItem_soon}`}>
-                      P2E Game single player mode releasе
+                      P2E Game single player mode releasе <br /> (March 1, 2022)
                     </div>
                   </div>
                 </div>
                 <div className={`${style.roadmapBody__item} ${style.roadmapBody__item_soon}`}>
                   <div className={style.roadmapBody__itemCircle}></div>
-                  <div className={style.roadmapBody__itemTitle}>
+                  {/* <div className={style.roadmapBody__itemTitle}>
                     listed on marketplaces
+                  </div> */}
+                  <div className={style.roadmapBody__itemPrice}>
+                    3 SOL/ 669
                   </div>
                   <div className={style.roadmapBody__itemDesc}>
                     After the last minting round in the next couple of days, the COOL GIRLS collection will be listed on marketplaces such as DigitalEyes, and MagicEden. We are currently in contact with Solanart so it is also a possibility
@@ -325,7 +330,7 @@ let Roadmap = () => {
             }
           </div>
         </div>
-      </div>
+      </Element>
     </>
   )
 }

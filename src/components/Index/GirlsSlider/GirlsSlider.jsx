@@ -13,44 +13,110 @@ let GirlsSlider = () => {
 
   const slidesContent = [
     {
-      imgUrl: 'coolgirls/IMG.png',
-      name: 'Cool Girl #522',
-      rare: 'Rare+',
+      imgUrl: '385.png',
+      name: 'Cool Girl #385',
+      rare: 'Rare',
       date: 'December 25th'
     },
     {
-      imgUrl: 'coolgirls/IMG.png',
-      name: 'Cool Girl #52',
+      imgUrl: '190.png',
+      name: 'Cool Girl #190',
       rare: 'Rare+',
       date: 'December 20th'
     },
     {
-      imgUrl: 'coolgirls/IMG.png',
-      name: 'Cool Girl #22',
+      imgUrl: '80.png',
+      name: 'Cool Girl #80',
       rare: 'Rare+',
       date: 'December 21th'
     },
     {
-      imgUrl: 'coolgirls/IMG.png',
-      name: 'Cool Girl #51',
+      imgUrl: '696.png',
+      name: 'Cool Girl #696',
       rare: 'Rare+',
       date: 'December 22th'
     },
     {
-      imgUrl: 'coolgirls/IMG.png',
-      name: 'Cool Girl #42',
+      imgUrl: '296.png',
+      name: 'Cool Girl #296',
       rare: 'Rare+',
       date: 'December 23th'
     },
     {
-      imgUrl: 'coolgirls/IMG.png',
-      name: 'Cool Girl #622',
+      imgUrl: '109.png',
+      name: 'Cool Girl #109',
       rare: 'Rare+',
       date: 'December 24th'
     },
     {
-      imgUrl: 'coolgirls/IMG.png',
-      name: 'Cool Girl #777',
+      imgUrl: '498.png',
+      name: 'Cool Girl #498',
+      rare: 'Rare+',
+      date: 'December 26th'
+    },
+    {
+      imgUrl: '984.png',
+      name: 'Cool Girl #984',
+      rare: 'Rare+',
+      date: 'December 26th'
+    },
+    {
+      imgUrl: '830.png',
+      name: 'Cool Girl #830',
+      rare: 'Rare+',
+      date: 'December 26th'
+    },
+    {
+      imgUrl: '574.png',
+      name: 'Cool Girl #574',
+      rare: 'Rare+',
+      date: 'December 26th'
+    },
+    {
+      imgUrl: '1505.jpeg',
+      name: 'Cool Girl #1505',
+      rare: 'Rare+',
+      date: 'December 26th'
+    },
+    {
+      imgUrl: '2010.jpeg',
+      name: 'Cool Girl #2010',
+      rare: 'Rare+',
+      date: 'December 26th'
+    },
+    {
+      imgUrl: '3333.jpeg',
+      name: 'Cool Girl #3333',
+      rare: 'Rare+',
+      date: 'December 26th'
+    },
+    {
+      imgUrl: '1857.jpeg',
+      name: 'Cool Girl #1857',
+      rare: 'Rare+',
+      date: 'December 26th'
+    },
+    {
+      imgUrl: '1505.jpeg',
+      name: 'Cool Girl #1505',
+      rare: 'Rare+',
+      date: 'December 26th'
+    },
+    {
+      imgUrl: '1857.jpeg',
+      name: 'Cool Girl #1857',
+      rare: 'Rare+',
+      date: 'December 26th'
+    },
+    {
+      imgUrl: '1.jpeg',
+      name: 'Cool Girl #1',
+      rare: 'Rare+',
+      date: 'December 26th'
+    },
+    {
+      imgUrl: '473.png',
+      name: 'Cool Girl #473',
       rare: 'Rare+',
       date: 'December 26th'
     },
@@ -61,7 +127,7 @@ let GirlsSlider = () => {
       <div className={`${style.sliderItem} ${isActive ? style.active : ''}`}>
         <div className={`${style.sliderItem__glow}`}></div>
         <div className={style.sliderItem__img}>
-          <img src={slide.imgUrl} alt="" />
+          <img src={`/coolgirls/imgs/girls_slider/${slide.imgUrl}`} alt="" />
         </div>
         <div className={`${style.sliderItem__content} ${isActive ? style.active : ''}`}>
           <div className={style.sliderItem__name}>
