@@ -11,7 +11,7 @@ const optionsBg = [
   { value: 'MARS_SKY#5%', label: 'MARS SKY - 5%' },
   { value: 'DRAIN#17%', label: 'DRAIN - 17%' },
   { value: 'RAIN#17%', label: 'RAIN - 17%' },
-  { value: 'SKY_DRAIN#5%', label: 'SKY DRAIN - 1.5%' },
+  { value: 'SKY_DRAIN#1.5%', label: 'SKY DRAIN - 1.5%' },
 ]
 
 const optionsBody = [
@@ -99,7 +99,7 @@ const optionsTop = [
   { value: 'NAKED_BREAST#1%', label: 'NAKED BREAST - 1%' },
 ]
 
-let SelectItem = ({ setItem, ...props }) => {
+let SelectItem = ({ setItem, summary, setSummary, index, ...props }) => {
 
   const [itemRare, setItemRare] = useState('')
 
@@ -121,7 +121,9 @@ let SelectItem = ({ setItem, ...props }) => {
         isSearchable={false}
         options={props.options}
         onChange={(value) => {
+          summary[index] = value.value.split('#')[1].split('%')[0] / 100
           setItem(value.value.split('#')[0])
+          setSummary(summary)
           setItemRare(() => {
             if (value.value.split('#')[1].split('%')[0] <= 1) {
               return 'legendary'
@@ -154,6 +156,25 @@ let Builder = () => {
   const [monthName, setMonthName] = useState('NONE')
   const [topName, setTopName] = useState('NONE')
 
+  const [summary, setSummary] = useState([1, 1, 1, 1, 1, 1, 1, 1, 1, 1])
+  console.log(summary);
+
+  function decimalAdjust(type, value, exp) {
+    if (typeof exp === 'undefined' || +exp === 0) {
+      return Math[type](value);
+    }
+    value = +value;
+    exp = +exp;
+    if (isNaN(value) || !(typeof exp === 'number' && exp % 1 === 0)) {
+      return NaN;
+    }
+    value = value.toString().split('e');
+    value = Math[type](+(value[0] + 'e' + (value[1] ? (+value[1] - exp) : -exp)));
+    value = value.toString().split('e');
+    return +(value[0] + 'e' + (value[1] ? (+value[1] + exp) : exp));
+  }
+  const round10 = (value, exp) => decimalAdjust('round', value, exp);
+
   return (
     <>
       <div className={style.builder}>
@@ -161,15 +182,15 @@ let Builder = () => {
           <div className={style.builderBody}>
             <div className={style.builderBody__col}>
               <div className={style.builderSelects}>
-                <SelectItem setItem={setBgName}
+                <SelectItem setItem={setBgName} index={0} summary={summary} setSummary={setSummary}
                   placeholder="select Background" name="Background" options={optionsBg} />
-                <SelectItem setItem={setBodyName}
+                <SelectItem setItem={setBodyName} index={1} summary={summary} setSummary={setSummary}
                   placeholder="select Body" name="Body" options={optionsBody} />
-                <SelectItem setItem={setBottomName}
+                <SelectItem setItem={setBottomName} index={2} summary={summary} setSummary={setSummary}
                   placeholder="select Bottom" name="Bottom" options={optionsBottom} />
-                <SelectItem setItem={setEyesName}
+                <SelectItem setItem={setEyesName} index={3} summary={summary} setSummary={setSummary}
                   placeholder="select Eyes" name="Eyes" options={optionsEyes} />
-                <SelectItem setItem={setGlovesName}
+                <SelectItem setItem={setGlovesName} index={4} summary={summary} setSummary={setSummary}
                   placeholder="select Gloves" name="Gloves" options={optionsGloves} />
               </div>
             </div>
@@ -209,18 +230,21 @@ let Builder = () => {
                   <img src={`/coolgirls/imgs/builder/layers/Top/${topName}.PNG`} alt="" />
                 </div>
               </div>
+              <div className={style.builderBody__rare}>
+                Rarity score: {(summary.reduce((prev, next) => prev * next) * 100)}%
+              </div>
             </div>
             <div className={style.builderBody__col}>
               <div className={style.builderSelects}>
-                <SelectItem setItem={setHairName}
+                <SelectItem setItem={setHairName} index={5} summary={summary} setSummary={setSummary}
                   placeholder="select Hair" name="Hair" options={optionsHair} />
-                <SelectItem setItem={setItemName}
+                <SelectItem setItem={setItemName} index={6} summary={summary} setSummary={setSummary}
                   placeholder="select item" name="item" options={optionsItem} />
-                <SelectItem setItem={setLegsName}
+                <SelectItem setItem={setLegsName} index={7} summary={summary} setSummary={setSummary}
                   placeholder="select Legs" name="Legs" options={optionsLegs} />
-                <SelectItem setItem={setMonthName}
+                <SelectItem setItem={setMonthName} index={8} summary={summary} setSummary={setSummary}
                   placeholder="select Month" name="Month" options={optionsMonth} />
-                <SelectItem setItem={setTopName}
+                <SelectItem setItem={setTopName} index={9} summary={summary} setSummary={setSummary}
                   placeholder="select Top" name="Top" options={optionsTop} />
               </div>
             </div>

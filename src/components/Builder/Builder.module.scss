@@ -60,6 +60,19 @@
         object-position: center;
       }
     }
+    &__rare {
+      display: block;
+      font-family: AvenirNext;
+      font-size: 23px;
+      font-weight: 700;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.34;
+      letter-spacing: -0.4px;
+      margin: 20px 0 0 10px;
+      color: #fff;
+      text-transform: uppercase;
+    }
   }
   &Selects {
     &__item {
