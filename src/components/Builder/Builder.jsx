@@ -121,7 +121,8 @@ let SelectItem = ({ setItem, summary, setSummary, index, ...props }) => {
         isSearchable={false}
         options={props.options}
         onChange={(value) => {
-          summary[index] = value.value.split('#')[1].split('%')[0] / 100
+          // summary[index] = value.value.split('#')[1].split('%')[0] / 100
+          summary[index] = 100 - Number(value.value.split('#')[1].split('%')[0])
           setItem(value.value.split('#')[0])
           setSummary(summary)
           setItemRare(() => {
@@ -157,24 +158,8 @@ let Builder = () => {
   const [topName, setTopName] = useState('NONE')
 
   const [summary, setSummary] = useState([1, 1, 1, 1, 1, 1, 1, 1, 1, 1])
-  console.log(summary);
-
-  function decimalAdjust(type, value, exp) {
-    if (typeof exp === 'undefined' || +exp === 0) {
-      return Math[type](value);
-    }
-    value = +value;
-    exp = +exp;
-    if (isNaN(value) || !(typeof exp === 'number' && exp % 1 === 0)) {
-      return NaN;
-    }
-    value = value.toString().split('e');
-    value = Math[type](+(value[0] + 'e' + (value[1] ? (+value[1] - exp) : -exp)));
-    value = value.toString().split('e');
-    return +(value[0] + 'e' + (value[1] ? (+value[1] + exp) : exp));
-  }
-  const round10 = (value, exp) => decimalAdjust('round', value, exp);
-
+  // const [summary, setSummary] = useState([0, 0, 0, 0, 0, 0, 0, 0, 0, 0])
+  // console.log(summary)
   return (
     <>
       <div className={style.builder}>
@@ -231,7 +216,7 @@ let Builder = () => {
                 </div>
               </div>
               <div className={style.builderBody__rare}>
-                Rarity score: {(summary.reduce((prev, next) => prev * next) * 100)}%
+                Rarity score: {Math.log(summary.reduce((prev, next) => prev * next)) + 2.09}
               </div>
             </div>
             <div className={style.builderBody__col}>
