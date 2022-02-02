@@ -37,7 +37,6 @@ let Roadmap = () => {
 
     let animCheker = () => {
       const roadmap = document.querySelector(`.${style.roadmap}`)
-      console.log(roadmap.getBoundingClientRect().top);
       if (roadmap.getBoundingClientRect().top < 270) {
         roadmapBgItem.style = `transform: translate(-50%, ${-roadmap.getBoundingClientRect().top + 200}px)`
       } else {
@@ -215,10 +214,10 @@ let Roadmap = () => {
                 </div>
                 <div className={style.roadmapBody__plan}>
                   <div className={`${style.roadmapBody__planItem} ${style.roadmapBody__planItem_soon} `}>
-                    Listing on Dextools and Solsea (NFT
+                    Listing on Dextools and Solsea (NFT <br /> (January 8, 2022)
                   </div>
                   <div className={`${style.roadmapBody__planItem} ${style.roadmapBody__planItem_soon} `}>
-                    hashes are sent to the exchanges
+                    hashes are sent to the exchanges <br /> (January 8, 2022)
                   </div>
                 </div>
               </SwiperSlide>
@@ -350,10 +349,10 @@ let Roadmap = () => {
                   </div>
                   <div className={style.roadmapBody__plan}>
                     <div className={`${style.roadmapBody__planItem} ${style.roadmapBody__planItem_soon}`}>
-                      Listing on Dextools and Solsea (NFT
+                      Listing on Dextools and Solsea (NFT) <br /> (January 28, 2022)
                     </div>
                     <div className={`${style.roadmapBody__planItem} ${style.roadmapBody__planItem_soon}`}>
-                      hashes are sent to the exchanges
+                      hashes are sent to the exchanges <br /> (January 29, 2022)
                     </div>
                   </div>
                 </div>

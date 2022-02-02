@@ -121,8 +121,8 @@ let SelectItem = ({ setItem, summary, setSummary, index, ...props }) => {
         isSearchable={false}
         options={props.options}
         onChange={(value) => {
-          // summary[index] = value.value.split('#')[1].split('%')[0] / 100
-          summary[index] = 100 - Number(value.value.split('#')[1].split('%')[0])
+          summary[index] = value.value.split('#')[1].split('%')[0] / 100
+          // summary[index] = 100 - Number(value.value.split('#')[1].split('%')[0])
           setItem(value.value.split('#')[0])
           setSummary(summary)
           setItemRare(() => {
@@ -216,7 +216,7 @@ let Builder = () => {
                 </div>
               </div>
               <div className={style.builderBody__rare}>
-                Rarity score: {Math.log(summary.reduce((prev, next) => prev * next)) + 2.09}
+                Rarity score: {-Math.log(summary.reduce((prev, next) => prev * next)) + 2.09}
               </div>
             </div>
             <div className={style.builderBody__col}>
