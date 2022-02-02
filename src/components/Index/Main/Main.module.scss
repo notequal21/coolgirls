@@ -13,6 +13,7 @@
         text-align: center;
         color: #fff;
         text-transform: uppercase;
+        position: relative;
         .br {
           &__mobile {
             display: none;
@@ -23,6 +24,8 @@
           background: linear-gradient(90deg, rgba(178,77,171,1) -20%, rgba(69,206,241,1) 100%);
           -webkit-background-clip: text;
           -webkit-text-fill-color: transparent;
+          animation: flow 5s ease-in-out infinite;
+          background-size: 200%;
         }
       }
       &Desc {
@@ -78,6 +81,37 @@
   -webkit-filter: blur(192.3px);
   filter: blur(192.3px);
   background-image: linear-gradient(to bottom, #772cd2, rgba(253, 19, 127, 0.8));
+}
+
+.zverek {
+  position: absolute;
+  bottom: 0;
+  right: 10%;
+  animation: zverekAnim 5s ease infinite;
+}
+
+@keyframes zverekAnim {
+  0% {
+    transform: translate(0);
+  }
+  50% {
+    transform: translate(-20%, 10%) rotate(-10deg);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
+
+@keyframes flow {
+  0% {
+    background-position: 0 0%;
+  }
+  50% {
+    background-position: 100% 0%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
 }
 
 @media (max-width:1500px) {

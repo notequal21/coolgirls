@@ -116,7 +116,7 @@ let Roadmap = () => {
                     1.0 SOL
                   </div>
                   <div className={style.roadmapBody__itemCount}>
-                    888 cool girl
+                    888 cool girls
                   </div>
                   <div className={style.roadmapBody__itemDesc}>
                     At the second minting round, we will allow 888 COOL GIRLS to be minted for 1 SOL. It will facilitate price growth of previously minted NFTs and allow people who missed out first minting round to get their GIRLS
@@ -247,7 +247,7 @@ let Roadmap = () => {
                     1.0 SOL
                   </div>
                   <div className={style.roadmapBody__itemCount}>
-                    888 cool girl
+                    888 cool girls
                   </div>
                   <div className={style.roadmapBody__itemDesc}>
                     At the second minting round, we will allow 888 COOL GIRLS to be minted for 1 SOL. It will facilitate price growth of previously minted NFTs and allow people who missed out first minting round to get their GIRLS
