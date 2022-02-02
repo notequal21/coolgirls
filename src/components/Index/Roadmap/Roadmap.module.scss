@@ -1,5 +1,6 @@
 .roadmap {
   margin: 120px 0 0 0;
+  overflow: hidden;
   &Text {
     &__title {
       font-family: AvenirNext;
@@ -30,10 +31,19 @@
     padding: 0 0 150% 0;
     &__bg {
       position: absolute;
+      z-index: 0;
       top: -65px;
       // left: calc(50% - 15px);
       left: 50%;
       transform: translate(-50%, 0);
+      &Item {
+        position: absolute;
+        left: 0;
+        width: 833px;
+        height: 1700px;
+        background-color: #031018;
+        transition: all .4s ease;
+      }
       img {
         &:nth-child(1) {
           position: absolute;
@@ -57,6 +67,14 @@
       align-items: center;
       position: absolute;
       z-index: 1;
+
+      transition: all .7s ease;
+      transform: translate(0, -50%);
+      opacity: 0;
+      &.active {
+        transform: translate(0);
+        opacity: 1;
+      }
       &:nth-child(2) {
         top: 0;
         right: 0;
@@ -437,6 +455,8 @@
         transform: translate(0) !important;
         width: auto;
         width: 315px !important;
+        transform: translate(0);
+        opacity: 1;
         &Content { 
           width: 315px !important;
           display: flex;

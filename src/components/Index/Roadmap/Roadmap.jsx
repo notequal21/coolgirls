@@ -13,6 +13,11 @@ import icoSoon from '../../../assets/img/roadmap/icoSoon@2x.png'
 
 let Roadmap = () => {
   const [isMobile, setIsMobile] = useState(false)
+
+  let styleBgItem = {
+    'transform': 'translate(-50%, -65px)'
+  }
+
   useEffect(() => {
     if (window.innerWidth <= 1200) {
       setIsMobile(true)
@@ -26,7 +31,31 @@ let Roadmap = () => {
         setIsMobile(false)
       }
     })
-  })
+
+    let roadmapItems = document.querySelectorAll(`.${style.roadmapBody__item}`)
+    let roadmapBgItem = document.querySelector(`.${style.roadmapBody__bgItem}`)
+
+    let animCheker = () => {
+      const roadmap = document.querySelector(`.${style.roadmap}`)
+      console.log(roadmap.getBoundingClientRect().top);
+      if (roadmap.getBoundingClientRect().top < 270) {
+        roadmapBgItem.style = `transform: translate(-50%, ${-roadmap.getBoundingClientRect().top + 200}px)`
+      } else {
+        roadmapBgItem.style = `transform: translate(-50%, -65px)`
+      }
+      roadmapItems.forEach((item, index) => {
+        if ((item.getBoundingClientRect().top) <= (window.scrollY * 0.25)) {
+          item.classList.add(style.active)
+        } else {
+          item.classList.remove(style.active)
+        }
+      })
+    }
+    animCheker()
+    document.addEventListener('scroll', animCheker)
+
+  }, [])
+
   return (
     <>
       <Element name='roadmap' className={style.roadmap}>
@@ -43,6 +72,9 @@ let Roadmap = () => {
             <div className={style.roadmapBody__bg}>
               <img src={bgLine} alt="" />
               <img src={bg} alt="" />
+              <div className={style.roadmapBody__bgItem}>
+
+              </div>
               {/* <svg width="814" height="207" viewBox="0 0 814 207" xmlns="http://www.w3.org/2000/svg">
                 <defs>
                   <linearGradient x1="80.498%" y1="44.745%" x2="86.088%" y2="54.815%" id="j2njodw41a">
@@ -71,10 +103,10 @@ let Roadmap = () => {
               centeredSlides={true}
               autoHeight={true}
             >
-              <SwiperSlide className={`${style.roadmapBody__itemContent}`}>
-                <div className={`${style.roadmapBody__itemCircle}`}></div>
-                {/* <div className={`${style.roadmapBody__itemContent}`}> */}
-                <div className={`${style.roadmapBody__item} ${style.roadmapBody__item_ended}`}>
+              <SwiperSlide className={`${style.roadmapBody__itemContent} `}>
+                <div className={`${style.roadmapBody__itemCircle} `}></div>
+                {/* <div className={`${ style.roadmapBody__itemContent } `}> */}
+                <div className={`${style.roadmapBody__item} ${style.roadmapBody__item_ended} `}>
 
                   <div className={style.roadmapBody__itemIco}>
                     <img src={icoSoon} alt="" />
@@ -89,22 +121,22 @@ let Roadmap = () => {
                     We do not like white lists that's why to reward early adopters the most we will distribute 777 out of 3333 COOL GIRLS for 0.3 SOL in the first minting round
                   </div>
                   <div className={style.roadmapBody__itemDivider}></div>
-                  <div className={`${style.roadmapBody__itemDate}`}>
+                  <div className={`${style.roadmapBody__itemDate} `}>
                     Ended November 16, 2021
                   </div>
                 </div>
                 <div className={style.roadmapBody__plan}>
-                  <div className={`${style.roadmapBody__planItem} ${style.roadmapBody__planItem_completed}`}>
+                  <div className={`${style.roadmapBody__planItem} ${style.roadmapBody__planItem_completed} `}>
                     November project Launch
                   </div>
-                  <div className={`${style.roadmapBody__planItem} ${style.roadmapBody__planItem_completed}`}>
+                  <div className={`${style.roadmapBody__planItem} ${style.roadmapBody__planItem_completed} `}>
                     Verification on solsea and digitaleyes
                   </div>
                 </div>
               </SwiperSlide>
-              <SwiperSlide className={`${style.roadmapBody__itemContent}`}>
+              <SwiperSlide className={`${style.roadmapBody__itemContent} `}>
                 <div className={style.roadmapBody__itemCircle}></div>
-                <div className={`${style.roadmapBody__item} ${style.roadmapBody__item_life}`}>
+                <div className={`${style.roadmapBody__item} ${style.roadmapBody__item_life} `}>
 
                   <div className={style.roadmapBody__itemLabel}>
                     Life
@@ -122,25 +154,25 @@ let Roadmap = () => {
                     At the second minting round, we will allow 888 COOL GIRLS to be minted for 1 SOL. It will facilitate price growth of previously minted NFTs and allow people who missed out first minting round to get their GIRLS
                   </div>
                   <div className={style.roadmapBody__itemDivider}></div>
-                  <button className={`${style.roadmapBody__itemBtn}`}>
+                  <button className={`${style.roadmapBody__itemBtn} `}>
                     MINT now
                   </button>
                 </div>
                 <div className={style.roadmapBody__plan}>
-                  <div className={`${style.roadmapBody__planItem} ${style.roadmapBody__planItem_wip}`}>
+                  <div className={`${style.roadmapBody__planItem} ${style.roadmapBody__planItem_wip} `}>
                     Launch of  Cool Marketplace
                   </div>
-                  <div className={`${style.roadmapBody__planItem} ${style.roadmapBody__planItem_life}`}>
+                  <div className={`${style.roadmapBody__planItem} ${style.roadmapBody__planItem_life} `}>
                     Issue of Cool Coin and airdrop to the NFT holders
                   </div>
-                  <div className={`${style.roadmapBody__planItem} ${style.roadmapBody__planItem_soon}`}>
+                  <div className={`${style.roadmapBody__planItem} ${style.roadmapBody__planItem_soon} `}>
                     Release of NFT staking pools <br /> (February 21, 2022)
                   </div>
                 </div>
               </SwiperSlide>
-              <SwiperSlide className={`${style.roadmapBody__itemContent}`}>
+              <SwiperSlide className={`${style.roadmapBody__itemContent} `}>
                 <div className={style.roadmapBody__itemCircle}></div>
-                <div className={`${style.roadmapBody__item} ${style.roadmapBody__item_soon}`}>
+                <div className={`${style.roadmapBody__item} ${style.roadmapBody__item_soon} `}>
                   <div className={style.roadmapBody__itemIco}>
                     <img src={icoSoon} alt="" />
                   </div>
@@ -154,19 +186,19 @@ let Roadmap = () => {
                     The second mining round is the penultimate mint before COOL GIRLS will be officially listed on the most reputable SOLANA blockchain marketplaces. In the 3rd minting round 999 COOL GIRLS will be minted for 2 SOL each
                   </div>
                   <div className={style.roadmapBody__itemDivider}></div>
-                  <div className={`${style.roadmapBody__itemDate}`}>
+                  <div className={`${style.roadmapBody__itemDate} `}>
                     Start after January 8, 2022 <br /> (March 1, 2022)
                   </div>
                 </div>
                 <div className={style.roadmapBody__plan}>
-                  <div className={`${style.roadmapBody__planItem} ${style.roadmapBody__planItem_soon}`}>
+                  <div className={`${style.roadmapBody__planItem} ${style.roadmapBody__planItem_soon} `}>
                     P2E Game single player mode releasе
                   </div>
                 </div>
               </SwiperSlide>
-              <SwiperSlide className={`${style.roadmapBody__itemContent}`}>
+              <SwiperSlide className={`${style.roadmapBody__itemContent} `}>
                 <div className={style.roadmapBody__itemCircle}></div>
-                <div className={`${style.roadmapBody__item} ${style.roadmapBody__item_soon}`}>
+                <div className={`${style.roadmapBody__item} ${style.roadmapBody__item_soon} `}>
                   <div className={style.roadmapBody__itemPrice}>
                     3.0 SOL
                   </div>
@@ -177,22 +209,22 @@ let Roadmap = () => {
                     After the last minting round in the next couple of days, the COOL GIRLS collection will be listed on marketplaces such as DigitalEyes, and MagicEden. We are currently in contact with Solanart so it is also a possibility
                   </div>
                   <div className={style.roadmapBody__itemDivider}></div>
-                  <div className={`${style.roadmapBody__itemDate}`}>
+                  <div className={`${style.roadmapBody__itemDate} `}>
                     Start after January 8, 2022
                   </div>
                 </div>
                 <div className={style.roadmapBody__plan}>
-                  <div className={`${style.roadmapBody__planItem} ${style.roadmapBody__planItem_soon}`}>
+                  <div className={`${style.roadmapBody__planItem} ${style.roadmapBody__planItem_soon} `}>
                     Listing on Dextools and Solsea (NFT
                   </div>
-                  <div className={`${style.roadmapBody__planItem} ${style.roadmapBody__planItem_soon}`}>
+                  <div className={`${style.roadmapBody__planItem} ${style.roadmapBody__planItem_soon} `}>
                     hashes are sent to the exchanges
                   </div>
                 </div>
               </SwiperSlide>
-              <SwiperSlide className={`${style.roadmapBody__itemContent}`}>
+              <SwiperSlide className={`${style.roadmapBody__itemContent} `}>
                 <div className={style.roadmapBody__itemCircle}></div>
-                <div className={`${style.roadmapBody__item} ${style.roadmapBody__item_soon}`}>
+                <div className={`${style.roadmapBody__item} ${style.roadmapBody__item_soon} `}>
                   <div className={style.roadmapBody__itemTitle}>
                     Cool girl games
                   </div>
@@ -200,7 +232,7 @@ let Roadmap = () => {
                     Play to earn game is launched. In the game, you will get a chance to see your girls at work and play with ur girls 18+
                   </div>
                   <div className={style.roadmapBody__itemDivider}></div>
-                  <button className={`${style.roadmapBody__itemBtn}`}>
+                  <button className={`${style.roadmapBody__itemBtn} `}>
                     Play!
                   </button>
                 </div>
@@ -208,6 +240,12 @@ let Roadmap = () => {
               </SwiperSlide>
             </Swiper>
               : <>
+                {/* <RoadmapItemDesctop classType={style.roadmapBody__item_ended}
+                  icon={icoSoon} price={`0.3 SOL`} soldout={`777 SOLD OUT`}
+                  desc={`We do not like white lists that's why to reward early adopters the most we will distribute 777 out of 3333 COOL GIRLS for 0.3 SOL in the first minting round`}
+  date = {`Ended November 16, 2021`
+} planClassType = { style.roadmapBody__planItem_completed } pla
+/> */}
                 <div className={`${style.roadmapBody__item} ${style.roadmapBody__item_ended}`}>
                   <div className={style.roadmapBody__itemCircle}></div>
                   <div className={style.roadmapBody__itemIco}>
@@ -334,11 +372,45 @@ let Roadmap = () => {
                 </div>
               </>
             }
-          </div>
-        </div>
-      </Element>
+          </div >
+        </div >
+      </Element >
     </>
   )
 }
+
+// let RoadmapItemDesctop = (props) => {
+//   return (
+//     <>
+//       <div className={`${style.roadmapBody__item} ${props.classType}`}>
+//         <div className={style.roadmapBody__itemCircle}></div>
+//         <div className={style.roadmapBody__itemIco}>
+//           <img src={props.icon} alt="" />
+//         </div>
+//         <div className={style.roadmapBody__itemPrice}>
+//           {props.price}
+//         </div>
+//         <div className={style.roadmapBody__itemCount}>
+//           {props.soldout}
+//         </div>
+//         <div className={style.roadmapBody__itemDesc}>
+//           {props.desc}
+//         </div>
+//         <div className={style.roadmapBody__itemDivider}></div>
+//         <div className={`${style.roadmapBody__itemDate}`}>
+//           {props.date}
+//         </div>
+//         <div className={style.roadmapBody__plan}>
+//           <div className={`${style.roadmapBody__planItem} ${props.planClassType}`}>
+//             November project Launch
+//           </div>
+//           <div className={`${style.roadmapBody__planItem} ${style.roadmapBody__planItem_completed}`}>
+//             Verification on solsea and digitaleyes
+//           </div>
+//         </div>
+//       </div>
+//     </>
+//   )
+// }
 
 export default Roadmap
