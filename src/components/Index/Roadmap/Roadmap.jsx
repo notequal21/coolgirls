@@ -168,7 +168,10 @@ let Roadmap = () => {
                 <div className={style.roadmapBody__itemCircle}></div>
                 <div className={`${style.roadmapBody__item} ${style.roadmapBody__item_soon}`}>
                   <div className={style.roadmapBody__itemPrice}>
-                    3 SOL/ 669
+                    3.0 SOL
+                  </div>
+                  <div className={style.roadmapBody__itemCount}>
+                    669 cool girls
                   </div>
                   <div className={style.roadmapBody__itemDesc}>
                     After the last minting round in the next couple of days, the COOL GIRLS collection will be listed on marketplaces such as DigitalEyes, and MagicEden. We are currently in contact with Solanart so it is also a possibility
@@ -295,7 +298,10 @@ let Roadmap = () => {
                     listed on marketplaces
                   </div> */}
                   <div className={style.roadmapBody__itemPrice}>
-                    3 SOL/ 669
+                    3.0 SOL
+                  </div>
+                  <div className={style.roadmapBody__itemCount}>
+                    669 cool girls
                   </div>
                   <div className={style.roadmapBody__itemDesc}>
                     After the last minting round in the next couple of days, the COOL GIRLS collection will be listed on marketplaces such as DigitalEyes, and MagicEden. We are currently in contact with Solanart so it is also a possibility
