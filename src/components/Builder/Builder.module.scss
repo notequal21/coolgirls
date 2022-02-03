@@ -127,6 +127,41 @@
   width: 240px;
 }
 
+.tooltip {
+  &__trigger {
+    margin: 0 0 0 5px;
+    background-color: transparent;
+    svg {
+      width: 20px;
+      height: 20px;
+      color: #fff;
+    }
+  }
+  &Body {
+    max-width: 240px;
+    background-color: #191D30;
+    padding: 10px;
+    margin: 0 0 0 10px;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 16px;
+    font-family: AvenirNext;
+    line-height: 1.3;
+    animation: tooltipShow 0.3s 1;
+  }
+}
+
+@keyframes tooltipShow {
+  0% {
+    transform: scale(0) translate(-100%, 0);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1) translate(0);
+    opacity: 1;
+  }
+}
+
 @media (max-width:992px) {
   .builder {
     margin: 30px 0 100px;
