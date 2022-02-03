@@ -217,7 +217,10 @@ let Builder = () => {
                 </div>
               </div>
               <div className={style.builderBody__rare}>
-                Rarity score: {-Math.log(summary.reduce((prev, next) => prev * next)) + 2.09}
+                Rarity score: <span>
+                  {summary.reduce((prev, next) => prev * next) === 1 ? 0
+                    : (-Math.log(summary.reduce((prev, next) => prev * next)) + 2.09).toFixed(4)}
+                </span>
                 <Popup
                   trigger={
                     <button type="button" className={style.tooltip__trigger}>
