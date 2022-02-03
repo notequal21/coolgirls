@@ -85,21 +85,27 @@
 
 .zverek {
   position: absolute;
-  bottom: 0;
-  right: 10%;
-  animation: zverekAnim 5s ease infinite;
+  bottom: -10px;
+  right: 20%;
+  animation: zverekAnim 3s ease infinite alternate;
 }
 
 @keyframes zverekAnim {
+  // 0% {
+  //   transform: translate(0);
+  // }
   0% {
-    transform: translate(0);
-  }
-  50% {
     transform: translate(-20%, 10%) rotate(-10deg);
   }
+  // 50% {
+  //   transform: translate(0) rotate(0deg);
+  // }
   100% {
-    transform: translate(0);
+    transform: translate(20%, 10%) rotate(10deg);
   }
+  // 100% {
+  //   transform: translate(0);
+  // }
 }
 
 @keyframes flow {
@@ -151,7 +157,8 @@
     }
   }
   .zverek {
-    top: -70%;
+    right: 5%;
+    top: -60px;
     bottom: auto;
   }
 }
@@ -159,7 +166,11 @@
   
 }
 @media (max-width:575px) {
-  
+  .zverek {
+    right: 0;
+    top: -115px;
+    bottom: auto;
+  }
 }
 @media (max-width:375px) {
   
