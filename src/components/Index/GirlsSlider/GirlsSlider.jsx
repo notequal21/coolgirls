@@ -1,7 +1,6 @@
-import style from './GirlsSlider.scss'
+import './GirlsSlider.scss'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
-import './sliderStyles.scss';
 import "swiper/css/effect-creative"
 import SwiperCore, {
   EffectCreative,
