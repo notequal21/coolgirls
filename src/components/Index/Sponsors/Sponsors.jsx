@@ -21,7 +21,7 @@ let Sponsors = () => {
           grabCursor={true}
         >
           <SwiperSlide className={style.sponsors__item}><img src={sponsorIco02} alt="" /></SwiperSlide>
-          <SwiperSlide className={style.sponsors__item}><img src={sponsorIco01} alt="" /></SwiperSlide>
+          {/* <SwiperSlide className={style.sponsors__item}><img src={sponsorIco01} alt="" /></SwiperSlide> */}
           <SwiperSlide className={style.sponsors__item}><img src={sponsorIco03} alt="" /></SwiperSlide>
           <SwiperSlide className={style.sponsors__item}><img src={sponsorIco04} alt="" /></SwiperSlide>
           <SwiperSlide className={style.sponsors__item}><img src={sponsorIco05} alt="" /></SwiperSlide>

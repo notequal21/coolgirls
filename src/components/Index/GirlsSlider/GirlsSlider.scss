@@ -11,7 +11,14 @@
 swiper-slide-duplicate-next {
   transition: all .3s ease;
   opacity: 1;
-  transform: translateY(-30%);
+  transform: translate(-7%, -35%) rotate(7deg);
+}
+.swiper-slide-prev,
+.swiper-slide-duplicate-prev,
+swiper-slide-duplicate-next {
+  transition: all .3s ease;
+  opacity: 1;
+  transform: translate(7%, -33%) rotate(-7deg);
 }
 .swiper-slide-active,
 .swiper-slide-duplicate-active{
@@ -19,6 +26,8 @@ swiper-slide-duplicate-next {
   opacity: 1;
   transform: translateY(-40%);
 }
+
+
 
 @media (max-width:992px) {
   .swiper-wrapper {

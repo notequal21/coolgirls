@@ -161,7 +161,7 @@ let GirlsSlider = () => {
           centeredSlides={true}
           modules={[Autoplay]}
           autoplay={{
-            delay: 20000000,
+            delay: 2000,
             disableOnInteraction: false,
           }}
         >

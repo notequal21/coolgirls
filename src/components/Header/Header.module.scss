@@ -8,7 +8,8 @@
       margin: 18px 0 0 0;
     }
     &__logo {
-
+      position: relative;
+      z-index: 1;
     }
     &__menu {
       display: flex;
@@ -204,6 +205,7 @@
 
 .bg__circle {
   position: absolute;
+  z-index: 0;
   top: -600px;
   left: -200px;
   width: 532px;

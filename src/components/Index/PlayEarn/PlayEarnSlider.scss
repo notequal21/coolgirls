@@ -1,4 +1,4 @@
-.sponsorsSlider {
+.playEarn__slider {
   .swiper-wrapper {
     padding: 0;
   }
@@ -9,14 +9,14 @@
   .swiper-slide-duplicate-prev,
   .swiper-slide-next,
   swiper-slide-duplicate-next {
-    transition: all .3s ease;
+    // transition: all .3s ease;
     opacity: 1;
-    transform: translateY(0) rotate(0);
+    transform: translateY(0);
   }
   .swiper-slide-active,
   .swiper-slide-duplicate-active{
-    transition: all .3s ease;
+    // transition: all .3s ease;
     opacity: 1;
-    transform: translateY(0) rotate(0);
+    transform: translateY(0);
   }
 }

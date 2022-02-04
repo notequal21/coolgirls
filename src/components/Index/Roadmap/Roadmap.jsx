@@ -101,7 +101,7 @@ let Roadmap = () => {
               // slidesPerView={1}
               slidesPerView={"auto"}
               centeredSlides={true}
-              autoHeight={true}
+              autoHeight={false}
             >
               <SwiperSlide className={`${style.roadmapBody__itemContent} `}>
                 <div className={`${style.roadmapBody__itemCircle} `}></div>
@@ -199,6 +199,9 @@ let Roadmap = () => {
               <SwiperSlide className={`${style.roadmapBody__itemContent} `}>
                 <div className={style.roadmapBody__itemCircle}></div>
                 <div className={`${style.roadmapBody__item} ${style.roadmapBody__item_soon} `}>
+                  <div className={style.roadmapBody__itemIco}>
+                    <img src={icoSoon} alt="" />
+                  </div>
                   <div className={style.roadmapBody__itemPrice}>
                     3.0 SOL
                   </div>
@@ -295,11 +298,12 @@ let Roadmap = () => {
                     MINT now
                   </button>
                   <div className={style.roadmapBody__plan}>
-                    <div className={`${style.roadmapBody__planItem} ${style.roadmapBody__planItem_wip}`}>
-                      Launch of  Cool Marketplace
+                    <div className={`${style.roadmapBody__planItem} ${style.roadmapBody__planItem_soon}`}>
+                      Launch of  Cool Marketplace <br />
+                      (February 7, 2022)
                     </div>
-                    <div className={`${style.roadmapBody__planItem} ${style.roadmapBody__planItem_life}`}>
-                      Issue of Cool Coin and airdrop to the NFT holders
+                    <div className={`${style.roadmapBody__planItem} ${style.roadmapBody__planItem_soon}`}>
+                      Issue of Cool Coin and airdrop to the NFT holders <br /> (February 10, 2022)
                     </div>
                     <div className={`${style.roadmapBody__planItem} ${style.roadmapBody__planItem_soon}`}>
                       Release of NFT staking pools <br /> (February 21, 2022)
@@ -335,6 +339,9 @@ let Roadmap = () => {
                   {/* <div className={style.roadmapBody__itemTitle}>
                     listed on marketplaces
                   </div> */}
+                  <div className={style.roadmapBody__itemIco}>
+                    <img src={icoSoon} alt="" />
+                  </div>
                   <div className={style.roadmapBody__itemPrice}>
                     3.0 SOL
                   </div>
