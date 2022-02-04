@@ -1,6 +1,7 @@
 import style from './Roadmap.module.scss'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
+import './RoadmapSlider.scss';
 import { useEffect, useState } from 'react';
 
 import { Element } from 'react-scroll'
@@ -67,7 +68,7 @@ let Roadmap = () => {
               Family of <span>3333</span> sexy girls that wish to spread love with us. There will be giveaways, minting whitelist and a lot more so try to stay on top of things by following our channels
             </div>
           </div>
-          <div className={style.roadmapBody}>
+          <div className={`${style.roadmapBody} roadmapSlider`}>
             <div className={style.roadmapBody__bg}>
               <img src={bgLine} alt="" />
               <img src={bg} alt="" />

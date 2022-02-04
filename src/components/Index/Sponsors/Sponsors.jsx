@@ -2,6 +2,7 @@ import style from './Sponsors.module.scss'
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/free-mode"
+import "./SponsorsSlider.scss"
 
 import sponsorIco01 from '../../../assets/img/sponsors/logo-1@2x.png'
 import sponsorIco02 from '../../../assets/img/sponsors/logo-2@2x.png'
@@ -11,7 +12,7 @@ import sponsorIco05 from '../../../assets/img/sponsors/logo-5@2x.png'
 let Sponsors = () => {
   return (
     <>
-      <div className={style.sponsors}>
+      <div className={`${style.sponsors} sponsorsSlider`}>
         <Swiper
           slidesPerView={'auto'}
           spaceBetween={90}
