@@ -8,7 +8,17 @@ import SwiperCore, {
   EffectCoverflow,
 } from 'swiper';
 import { Autoplay } from "swiper";
+
 let GirlsSlider = () => {
+
+  let myEffect: {
+    setTranslate: () => {
+
+    },
+    setTransition: (duration) => {
+
+    }
+  }
 
   const slidesContent = [
     {
