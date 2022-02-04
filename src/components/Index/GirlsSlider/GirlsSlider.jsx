@@ -1,4 +1,4 @@
-import style from './GirlsSlider.module.scss'
+import style from './GirlsSlider.scss'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import './sliderStyles.scss';
@@ -122,25 +122,25 @@ let GirlsSlider = () => {
     },
   ]
 
-  const slides = slidesContent.map((slide) => <SwiperSlide className={style.slider__slide}>
+  const slides = slidesContent.map((slide) => <SwiperSlide className={`slider__slide`}>
     {({ isActive }) => (
-      <div className={`${style.sliderItem} ${isActive ? style.active : ''}`}>
-        <div className={`${style.sliderItem__glow}`}></div>
-        <div className={style.sliderItem__img}>
+      <div className={`${`sliderItem`} ${isActive ? `active` : ''}`}>
+        <div className={`${`sliderItem__glow`}`}></div>
+        <div className={`sliderItem__img`}>
           <img src={`/coolgirls/imgs/girls_slider/${slide.imgUrl}`} alt="" />
         </div>
-        <div className={`${style.sliderItem__content} ${isActive ? style.active : ''}`}>
-          <div className={style.sliderItem__name}>
+        <div className={`${`sliderItem__content`} ${isActive ? `active` : ''}`}>
+          <div className={`sliderItem__name`}>
             {slide.name}
           </div>
-          <div className={style.sliderItem__info}>
-            <div className={style.sliderItem__infoItem}>
+          <div className={`sliderItem__info`}>
+            <div className={`sliderItem__infoItem`}>
               Rarity needed
               <span>
                 {slide.rare}
               </span>
             </div>
-            <div className={style.sliderItem__infoItem}>
+            <div className={`sliderItem__infoItem`}>
               Hatch on
               <span>
                 {slide.date}
@@ -154,7 +154,7 @@ let GirlsSlider = () => {
 
   return (
     <>
-      <div className={`${style.slider} girlsSlider`}>
+      <div className={`${`slider`} girlsSlider`}>
         <Swiper
           grabCursor={true}
           spaceBetween={50}
