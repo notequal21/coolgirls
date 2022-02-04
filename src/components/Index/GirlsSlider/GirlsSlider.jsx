@@ -11,15 +11,6 @@ import { Autoplay } from "swiper";
 
 let GirlsSlider = () => {
 
-  let myEffect: {
-    setTranslate: () => {
-
-    },
-    setTransition: (duration) => {
-
-    }
-  }
-
   const slidesContent = [
     {
       imgUrl: '385.png',
@@ -169,40 +160,44 @@ let GirlsSlider = () => {
           spaceBetween={50}
           slidesPerView={'auto'}
           loop={true}
+          loopAdditionalSlides={2}
+          // slidesPerView={3}
+          loop={true}
           initialSlide={2}
           centeredSlides={true}
           // onSlideChange={(swiper) => console.log(swiper, swiper.activeIndex, swiper.slides[swiper.activeIndex - 2], swiper.slides[swiper.activeIndex + 2].style)}
           // effect={'creative'}
           // limitProgress={3}
-          modules={[EffectCoverflow, Autoplay]}
-          effect={"coverflow"}
-          coverflowEffect={{
-            rotate: 50,
-            stretch: 0,
-            depth: 100,
-            modifier: 1,
-            slideShadows: true,
-          }}
+          // modules={[EffectCoverflow, Autoplay]}
+          modules={[Autoplay]}
+          // effect={"coverflow"}
+          // coverflowEffect={{
+          //   rotate: 50,
+          //   stretch: 0,
+          //   depth: 100,
+          //   modifier: 1,
+          //   slideShadows: true,
+          // }}
           autoplay={{
             delay: 2000,
             disableOnInteraction: false,
           }}
-          creativeEffect={{
-            prev: {
-              translate: ['calc(-100% - 50px)', '10%', 0],
-              rotate: [0, 0, -10],
-              origin: 'center',
-              // opacity?: number;
-              // scale: 0.4,
-              // shadow?: boolean;
-              isActive: false
-            },
-            next: {
-              translate: ['calc(100% + 50px)', '10%', 0],
-              rotate: [0, 0, 10],
-              origin: 'center',
-            },
-          }}
+        // creativeEffect={{
+        //   prev: {
+        //     translate: ['calc(-100% - 50px)', '10%', 0],
+        //     rotate: [0, 0, -10],
+        //     origin: 'center',
+        //     // opacity?: number;
+        //     // scale: 0.4,
+        //     // shadow?: boolean;
+        //     isActive: false
+        //   },
+        //   next: {
+        //     translate: ['calc(100% + 50px)', '10%', 0],
+        //     rotate: [0, 0, 10],
+        //     origin: 'center',
+        //   },
+        // }}
         // onSwiper={(swiper) => console.log(swiper)}
         >
           {slides}

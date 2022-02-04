@@ -1,7 +1,9 @@
 .slider {
   margin: 30px 0 0 0;
+  height: 350px;
   &__slide {
     width: 366px !important;
+    transition: all .3s ease;
   }
   &Item {
     position: relative;
@@ -34,11 +36,17 @@
     }
     &__content {
       transition: all .3s ease;
-      position: absolute;
-      transform: scale(0);
+      opacity: 0;
+      visibility: hidden;
+      // display: none;
+      // position: absolute;
+      // transform: scale(0);
       &.active {
-        transform: scale(1);
-        position: relative;
+        opacity: 1;
+        visibility: visible;
+        // display: block;
+        // transform: scale(1);
+        // position: relative;
       }
     }
     &__img {

@@ -1,0 +1,20 @@
+.swiper-wrapper {
+  padding: 240px 0 0 0;
+}
+.swiper-slide:not(.swiper-slide-prev):not(.swiper-slide-active):not(.swiper-slide-next) {
+  opacity: 1;
+}
+.swiper-slide-prev,
+.swiper-slide-duplicate-prev,
+.swiper-slide-next,
+swiper-slide-duplicate-next {
+  transition: all .3s ease;
+  opacity: 1;
+  transform: translateY(-30%);
+}
+.swiper-slide-active,
+.swiper-slide-duplicate-active{
+  transition: all .3s ease;
+  opacity: 1;
+  transform: translateY(-40%);
+}
