@@ -156,14 +156,19 @@
       font-weight: 400;
     }
     &Body {
+      display: block;
       margin: 50px 0 0 0;
       flex-direction: column;
       &__item {
-        margin: 20px auto 0;
-        flex: 1 1 auto;
+        // max-width: 100%;
         max-width: 475px;
+
+        // height: 500px;
+        // width: 400px;
+        // margin: 20px auto 0;
+        // flex: 1 1 auto;
         &:first-child {
-          margin: 0 auto;
+          margin: auto;
         }
       }
     }

@@ -1,0 +1,26 @@
+.coolGirlSlider {
+  .swiper-slide  {
+    max-width: 475px !important;
+    margin: 0 30px;
+  }
+  .swiper-wrapper {
+    padding: 0;
+  }
+  .swiper-slide:not(.swiper-slide-prev):not(.swiper-slide-active):not(.swiper-slide-next) {
+    opacity: 1;
+  }
+  .swiper-slide-prev,
+  .swiper-slide-duplicate-prev,
+  .swiper-slide-next,
+  swiper-slide-duplicate-next {
+    transition: all .3s ease;
+    opacity: 1;
+    transform: translateY(0) rotate(0);
+  }
+  .swiper-slide-active,
+  .swiper-slide-duplicate-active{
+    transition: all .3s ease;
+    opacity: 1;
+    transform: translateY(0) rotate(0);
+  }
+}
