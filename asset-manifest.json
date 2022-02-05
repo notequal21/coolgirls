@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/coolgirls/static/css/main.4c98dc02.css",
-    "main.js": "/coolgirls/static/js/main.e5400239.js",
+    "main.js": "/coolgirls/static/js/main.1ec5af1c.js",
     "static/css/851.a7e749e1.chunk.css": "/coolgirls/static/css/851.a7e749e1.chunk.css",
     "static/js/851.39b1263e.chunk.js": "/coolgirls/static/js/851.39b1263e.chunk.js",
     "static/css/658.cb80d2c4.chunk.css": "/coolgirls/static/css/658.cb80d2c4.chunk.css",
@@ -35,7 +35,7 @@
     "static/media/radial.png": "/coolgirls/static/media/radial.003128fb997d845a7f34.png",
     "index.html": "/coolgirls/index.html",
     "main.4c98dc02.css.map": "/coolgirls/static/css/main.4c98dc02.css.map",
-    "main.e5400239.js.map": "/coolgirls/static/js/main.e5400239.js.map",
+    "main.1ec5af1c.js.map": "/coolgirls/static/js/main.1ec5af1c.js.map",
     "851.a7e749e1.chunk.css.map": "/coolgirls/static/css/851.a7e749e1.chunk.css.map",
     "851.39b1263e.chunk.js.map": "/coolgirls/static/js/851.39b1263e.chunk.js.map",
     "658.cb80d2c4.chunk.css.map": "/coolgirls/static/css/658.cb80d2c4.chunk.css.map",
@@ -55,6 +55,6 @@
   },
   "entrypoints": [
     "static/css/main.4c98dc02.css",
-    "static/js/main.e5400239.js"
+    "static/js/main.1ec5af1c.js"
   ]
 }
