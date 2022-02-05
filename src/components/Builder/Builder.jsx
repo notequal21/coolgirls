@@ -195,34 +195,34 @@ let Builder = () => {
                   <img src={`/coolgirls/imgs/builder/layers/EmptyGirl.png`} alt="" />
                 </div>
                 <div className={`${style.builderBody__previewItem} ${style.builderBody__previewItem_bg}`}>
-                  <img src={`/coolgirls/imgs/builder/layers/Background/${bgName}.PNG`} alt="" />
+                  <img src={`/coolgirls/imgs/builder/layers/Background/${bgName}.png`} alt="" />
                 </div>
                 <div className={`${style.builderBody__previewItem} ${style.builderBody__previewItem_body}`}>
-                  <img src={`/coolgirls/imgs/builder/layers/Body/${bodyName}.PNG`} alt="" />
+                  <img src={`/coolgirls/imgs/builder/layers/Body/${bodyName}.png`} alt="" />
                 </div>
                 <div className={`${style.builderBody__previewItem} ${style.builderBody__previewItem_bottom}`}>
-                  <img src={`/coolgirls/imgs/builder/layers/Bottom/${bottomName}.PNG`} alt="" />
+                  <img src={`/coolgirls/imgs/builder/layers/Bottom/${bottomName}.png`} alt="" />
                 </div>
                 <div className={`${style.builderBody__previewItem} ${style.builderBody__previewItem_eyes}`}>
-                  <img src={`/coolgirls/imgs/builder/layers/Eyes/${eyesName}.PNG`} alt="" />
+                  <img src={`/coolgirls/imgs/builder/layers/Eyes/${eyesName}.png`} alt="" />
                 </div>
                 <div className={`${style.builderBody__previewItem} ${style.builderBody__previewItem_gloves}`}>
-                  <img src={`/coolgirls/imgs/builder/layers/Gloves/${glovesName}.PNG`} alt="" />
+                  <img src={`/coolgirls/imgs/builder/layers/Gloves/${glovesName}.png`} alt="" />
                 </div>
                 <div className={`${style.builderBody__previewItem} ${style.builderBody__previewItem_hair}`}>
-                  <img src={`/coolgirls/imgs/builder/layers/Hair/${hairName}.PNG`} alt="" />
+                  <img src={`/coolgirls/imgs/builder/layers/Hair/${hairName}.png`} alt="" />
                 </div>
                 <div className={`${style.builderBody__previewItem} ${style.builderBody__previewItem_item}`}>
-                  <img src={`/coolgirls/imgs/builder/layers/Legendary/${itemName}.PNG`} alt="" />
+                  <img src={`/coolgirls/imgs/builder/layers/Legendary/${itemName}.png`} alt="" />
                 </div>
                 <div className={`${style.builderBody__previewItem} ${style.builderBody__previewItem_legs}`}>
-                  <img src={`/coolgirls/imgs/builder/layers/Legs/${legsName}.PNG`} alt="" />
+                  <img src={`/coolgirls/imgs/builder/layers/Legs/${legsName}.png`} alt="" />
                 </div>
                 <div className={`${style.builderBody__previewItem} ${style.builderBody__previewItem_month}`}>
-                  <img src={`/coolgirls/imgs/builder/layers/Month/${monthName}.PNG`} alt="" />
+                  <img src={`/coolgirls/imgs/builder/layers/Month/${monthName}.png`} alt="" />
                 </div>
                 <div className={`${style.builderBody__previewItem} ${style.builderBody__previewItem_top}`}>
-                  <img src={`/coolgirls/imgs/builder/layers/Top/${topName}.PNG`} alt="" />
+                  <img src={`/coolgirls/imgs/builder/layers/Top/${topName}.png`} alt="" />
                 </div>
               </div>
               <div className={style.builderBody__rare}>
