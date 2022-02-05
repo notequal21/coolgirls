@@ -116,8 +116,8 @@ let GirlsSlider = () => {
     },
   ]
 
-  const slides = slidesContent.map((slide) => <SwiperSlide
-    className={`${style.slider__item}`}>
+  const slides = slidesContent.map((slide, index) => <SwiperSlide
+    key={index} className={`${style.slider__item}`}>
     {({ isActive }) => (
       <div className={`${`${style.sliderItem}`} ${isActive ? `${style.active}` : ''}`}>
         <div className={`${`${style.sliderItem__glow}`}`}></div>

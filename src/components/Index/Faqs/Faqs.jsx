@@ -35,8 +35,8 @@ let Faqs = () => {
             FAQ'S
           </div>
           <div className={style.faqsBody}>
-            {accordionData.map(({ title, content }) => (
-              <Accordion title={title} content={content} />
+            {accordionData.map(({ title, content }, index) => (
+              <Accordion key={index} title={title} content={content} />
             ))}
           </div>
         </div>
