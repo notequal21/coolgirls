@@ -80,24 +80,33 @@ const optionsItem = [
 ]
 
 const optionsLegs = [
-  { value: 'BLACK_TIES#50%', label: 'BLACK TIES - 50%' },
-  { value: 'JEANS#10%', label: 'JEANS - 10%' },
-  { value: 'LATEX_RED#1%', label: 'LATEX RED - 1%' },
-  { value: 'LATEX_GREEN#1%', label: 'LATEX GREEN - 1%' },
+  { value: 'LATEX_GREEN#16%', label: 'LATEX GREEN - 16%' },
+  { value: 'LATEX_RED#16%', label: 'LATEX RED - 16%' },
+  { value: 'WHITE_TIES#5.5%', label: 'WHITE TIES - 5.5%' },
+  { value: 'BLACK_TIES#5.5%', label: 'BLACK TIES - 5.5%' },
+  { value: 'NONE#54%', label: 'NONE - 54%' },
+  { value: 'JEANS#3%', label: 'JEANS - 3%' },
 ]
 
 const optionsMonth = [
-  { value: 'BATMAN#50%', label: 'BATMAN - 50%' },
-  { value: 'DEVIL_TONGUE#10%', label: 'DEVIL TONGUE - 10%' },
-  { value: 'NONE#1%', label: 'NONE - 1%' },
-  { value: 'POISON_TONGUE#1%', label: 'POISON TONGUE - 1%' },
+  { value: 'SEW#4%', label: 'SEW - 4%' },
+  { value: 'BATMAN#7.5%', label: 'BATMAN - 7.5%' },
+  { value: 'NONE#75%', label: 'NONE - 75%' },
+  { value: 'DEVIL_TONGUE#4%', label: 'DEVIL TONGUE - 4%' },
+  { value: 'TAPE#7.5%', label: 'TAPE - 7.5%' },
+  { value: 'POISON_TONGUE#2%', label: 'POISON TONGUE - 2%' },
 ]
 
 const optionsTop = [
-  { value: 'GREEN_TOP#50%', label: 'GREEN TOP - 50%' },
-  { value: 'GREY_TOP#10%', label: 'GREY TOP - 10%' },
-  { value: 'LATEX_TOP#1%', label: 'LATEX TOP - 1%' },
-  { value: 'NAKED_BREAST#1%', label: 'NAKED BREAST - 1%' },
+  { value: 'PURPLE_TOP#14.7%', label: 'PURPLE TOP - 14.7%' },
+  { value: 'RAISED_TOP#7.3%', label: 'RAISED TOP - 7.3%' },
+  { value: 'GREY_TOP#14.7%', label: 'GREY TOP - 14.7%' },
+  { value: 'RED_BIKINI#14.7%', label: 'RED BIKINI - 14.7%' },
+  { value: 'NAKED_BREAST#1.5%', label: 'NAKED BREAST - 1.5%' },
+  { value: 'LATEX_TOP#14.7%', label: 'LATEX TOP - 14.7%' },
+  { value: 'WHITE_TOP#14.7%', label: 'WHITE TOP - 14.7%' },
+  { value: 'GREEN_TOP#14.7%', label: 'GREEN TOP - 14.7%' },
+  { value: 'SWIMSUIT#3%', label: 'SWIMSUIT - 3%' },
 ]
 
 let SelectItem = ({ setItem, summary, setSummary, index, ...props }) => {
