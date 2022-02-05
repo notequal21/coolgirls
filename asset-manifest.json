@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/coolgirls/static/css/main.3ea277e4.css",
+    "main.css": "/coolgirls/static/css/main.bc0ff2bd.css",
     "main.js": "/coolgirls/static/js/main.8f04d578.js",
     "static/js/787.edd59a96.chunk.js": "/coolgirls/static/js/787.edd59a96.chunk.js",
     "static/media/img01.png": "/coolgirls/static/media/img01.550ad2630e52b1ddedd4.png",
@@ -20,12 +20,12 @@
     "static/media/AnyConv.com__Metropolis-Regular.woff": "/coolgirls/static/media/AnyConv.com__Metropolis-Regular.2088a6d54e2e1738aa22.woff",
     "static/media/radial.png": "/coolgirls/static/media/radial.003128fb997d845a7f34.png",
     "index.html": "/coolgirls/index.html",
-    "main.3ea277e4.css.map": "/coolgirls/static/css/main.3ea277e4.css.map",
+    "main.bc0ff2bd.css.map": "/coolgirls/static/css/main.bc0ff2bd.css.map",
     "main.8f04d578.js.map": "/coolgirls/static/js/main.8f04d578.js.map",
     "787.edd59a96.chunk.js.map": "/coolgirls/static/js/787.edd59a96.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.3ea277e4.css",
+    "static/css/main.bc0ff2bd.css",
     "static/js/main.8f04d578.js"
   ]
 }
