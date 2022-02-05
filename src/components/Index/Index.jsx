@@ -22,7 +22,7 @@ let Index = () => {
     <>
       <Main />
       <GirlsSlider />
-      <Suspense>
+      <Suspense fallback={<div></div>}>
         <Sponsors />
         <Roadmap />
         <CoolCoin />
