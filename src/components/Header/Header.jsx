@@ -3,14 +3,6 @@ import style from './Header.module.scss'
 import { Link } from 'react-router-dom'
 import { Link as LinkAnc, Button, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
 
-// imgs
-import builderIco from '../../assets/img/header/codepen@2x.png'
-import IcoTeam from '../../assets/img/header/users@2x.png'
-import IcoFaq from '../../assets/img/header/help-circle@2x.png'
-import IcoCoolCoin from '../../assets/img/header/oval-copy-21@2x.png'
-import IcoRoadmap from '../../assets/img/header/line@2x.png'
-import IcoAbout from '../../assets/img/header/info@2x.png'
-
 let Header = () => {
 
   const [menuOpen, setMenuOpen] = useState(false)
@@ -19,7 +11,7 @@ let Header = () => {
     <>
       <div className={`${style.header}`}>
         <div className="container">
-          <div className={style.bg__circle}></div>
+          {/* <div className={style.bg__circle}></div> */}
           <div className={`${style.headerBody}`}>
             <Link to='' className={`${style.headerBody__logo}`}>
               <svg width="102" height="28" viewBox="0 0 102 28" xmlns="http://www.w3.org/2000/svg">
@@ -31,28 +23,28 @@ let Header = () => {
                 <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="home" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M280.37 148.26L96 300.11V464a16 16 0 0 0 16 16l112.06-.29a16 16 0 0 0 15.92-16V368a16 16 0 0 1 16-16h64a16 16 0 0 1 16 16v95.64a16 16 0 0 0 16 16.05L464 480a16 16 0 0 0 16-16V300L295.67 148.26a12.19 12.19 0 0 0-15.3 0zM571.6 251.47L488 182.56V44.05a12 12 0 0 0-12-12h-56a12 12 0 0 0-12 12v72.61L318.47 43a48 48 0 0 0-61 0L4.34 251.47a12 12 0 0 0-1.6 16.9l25.5 31A12 12 0 0 0 45.15 301l235.22-193.74a12.19 12.19 0 0 1 15.3 0L530.9 301a12 12 0 0 0 16.9-1.6l25.5-31a12 12 0 0 0-1.7-16.93z"></path></svg>
                 Home
               </Link>
-              <Link to='' className={`${style.headerBody__menuItem}`}>
-                <img src={IcoAbout} alt="" />
+              <LinkAnc to='about' spy={true} smooth={true} offset={-20} duration={300} className={`${style.headerBody__menuItem}`}>
+                <img src={`https://coolgirls.io/imgs/header/info.png`} alt="" />
                 About
-              </Link>
+              </LinkAnc>
               <LinkAnc to='roadmap' spy={true} smooth={true} offset={-20} duration={300} className={`${style.headerBody__menuItem}`}>
-                <img src={IcoRoadmap} alt="" />
+                <img src={`https://coolgirls.io/imgs/header/line.png`} alt="" />
                 Roadmap
               </LinkAnc>
               <LinkAnc to='coolcoin' spy={true} smooth={true} offset={-20} duration={300} className={`${style.headerBody__menuItem}`}>
-                <img src={IcoCoolCoin} alt="" />
+                <img src={`https://coolgirls.io/imgs/header/oval-copy-21.png`} alt="" />
                 Cool coin
               </LinkAnc>
               <LinkAnc to='faq' spy={true} smooth={true} offset={-20} duration={300} className={`${style.headerBody__menuItem}`}>
-                <img src={IcoFaq} alt="" />
+                <img src={`https://coolgirls.io/imgs/header/help-circle.png`} alt="" />
                 FAQ
               </LinkAnc>
               <LinkAnc to='team' spy={true} smooth={true} offset={-20} duration={300} className={`${style.headerBody__menuItem}`}>
-                <img src={IcoTeam} alt="" />
+                <img src={`https://coolgirls.io/imgs/header/users.png`} alt="" />
                 Team
               </LinkAnc>
               <Link to='builder' className={`${style.headerBody__menuItem}`}>
-                <img src={builderIco} alt="" />
+                <img src={`https://coolgirls.io/imgs/header/info.png`} alt="" />
                 BUILDER
               </Link>
               <div className={style.mobileMenu__footer}>
@@ -104,13 +96,11 @@ let Header = () => {
                   </g>
                 </svg>
               </div>
-              <div className={`${style.headerBody__socialItem}`}>
+              <a target={`_blank`} href='https://discord.com/invite/VXzzP2J45c' className={`${style.headerBody__socialItem}`}>
                 <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="discord" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path fill="currentColor" d="M524.531,69.836a1.5,1.5,0,0,0-.764-.7A485.065,485.065,0,0,0,404.081,32.03a1.816,1.816,0,0,0-1.923.91,337.461,337.461,0,0,0-14.9,30.6,447.848,447.848,0,0,0-134.426,0,309.541,309.541,0,0,0-15.135-30.6,1.89,1.89,0,0,0-1.924-.91A483.689,483.689,0,0,0,116.085,69.137a1.712,1.712,0,0,0-.788.676C39.068,183.651,18.186,294.69,28.43,404.354a2.016,2.016,0,0,0,.765,1.375A487.666,487.666,0,0,0,176.02,479.918a1.9,1.9,0,0,0,2.063-.676A348.2,348.2,0,0,0,208.12,430.4a1.86,1.86,0,0,0-1.019-2.588,321.173,321.173,0,0,1-45.868-21.853,1.885,1.885,0,0,1-.185-3.126c3.082-2.309,6.166-4.711,9.109-7.137a1.819,1.819,0,0,1,1.9-.256c96.229,43.917,200.41,43.917,295.5,0a1.812,1.812,0,0,1,1.924.233c2.944,2.426,6.027,4.851,9.132,7.16a1.884,1.884,0,0,1-.162,3.126,301.407,301.407,0,0,1-45.89,21.83,1.875,1.875,0,0,0-1,2.611,391.055,391.055,0,0,0,30.014,48.815,1.864,1.864,0,0,0,2.063.7A486.048,486.048,0,0,0,610.7,405.729a1.882,1.882,0,0,0,.765-1.352C623.729,277.594,590.933,167.465,524.531,69.836ZM222.491,337.58c-28.972,0-52.844-26.587-52.844-59.239S193.056,219.1,222.491,219.1c29.665,0,53.306,26.82,52.843,59.239C275.334,310.993,251.924,337.58,222.491,337.58Zm195.38,0c-28.971,0-52.843-26.587-52.843-59.239S388.437,219.1,417.871,219.1c29.667,0,53.307,26.82,52.844,59.239C470.715,310.993,447.538,337.58,417.871,337.58Z"></path></svg>
-              </div>
+              </a>
             </div>
-            <button onClick={() => {
-              menuOpen ? setMenuOpen(false) : setMenuOpen(true)
-            }} className={`${style.mobileMenu__btn} ${menuOpen ? style.active : ''}`}>
+            <button onClick={() => setMenuOpen(!menuOpen)} className={`${style.mobileMenu__btn} ${menuOpen ? style.active : ''}`}>
               <span></span>
               <span></span>
               <span></span>

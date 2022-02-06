@@ -4,11 +4,6 @@ import "swiper/css";
 import "swiper/css/free-mode"
 import "./SponsorsSlider.scss"
 
-import sponsorIco01 from '../../../assets/img/sponsors/logo-1@2x.png'
-import sponsorIco02 from '../../../assets/img/sponsors/logo-2@2x.png'
-import sponsorIco03 from '../../../assets/img/sponsors/logo-3@2x.png'
-import sponsorIco04 from '../../../assets/img/sponsors/logo-4@2x.png'
-import sponsorIco05 from '../../../assets/img/sponsors/logo-5@2x.png'
 let Sponsors = () => {
   return (
     <>
@@ -20,11 +15,11 @@ let Sponsors = () => {
           loop={true}
           grabCursor={true}
         >
-          <SwiperSlide className={style.sponsors__item}><img src={sponsorIco02} alt="" /></SwiperSlide>
-          {/* <SwiperSlide className={style.sponsors__item}><img src={sponsorIco01} alt="" /></SwiperSlide> */}
-          <SwiperSlide className={style.sponsors__item}><img src={sponsorIco03} alt="" /></SwiperSlide>
-          <SwiperSlide className={style.sponsors__item}><img src={sponsorIco04} alt="" /></SwiperSlide>
-          <SwiperSlide className={style.sponsors__item}><img src={sponsorIco05} alt="" /></SwiperSlide>
+          <SwiperSlide className={style.sponsors__item}><img src={'https://coolgirls.io/imgs/sponsors/logo-1.png'} alt="" /></SwiperSlide>
+          <SwiperSlide className={style.sponsors__item}><img src={'https://coolgirls.io/imgs/sponsors/logo-2.png'} alt="" /></SwiperSlide>
+          <SwiperSlide className={style.sponsors__item}><img src={'https://coolgirls.io/imgs/sponsors/logo-3.png'} alt="" /></SwiperSlide>
+          <SwiperSlide className={style.sponsors__item}><img src={'https://coolgirls.io/imgs/sponsors/logo-4.png'} alt="" /></SwiperSlide>
+          <SwiperSlide className={style.sponsors__item}><img src={'https://coolgirls.io/imgs/sponsors/logo-5.png'} alt="" /></SwiperSlide>
         </Swiper>
       </div>
     </>

@@ -4,11 +4,6 @@ import Popup from 'reactjs-popup'
 import { ResponsiveLine } from '@nivo/line'
 import { Element } from 'react-scroll'
 
-// imgs
-import img from '../../../assets/img/coolcoin/img@2x.png'
-import radial from '../../../assets/img/modal/radial.png'
-import closeIco from '../../../assets/img/modal/closeIco.png'
-
 
 const data = [
   {
@@ -299,7 +294,7 @@ let CoolCoin = () => {
                   {close => (
                     <div className={style.modal}>
                       <div onClick={close} className={style.modal__close}>
-                        <img src={closeIco} alt="" />
+                        <img src={'./imgs/coolcoin/closeIco.png'} alt="" />
                       </div>
                       <div className={style.modalBody}>
                         <div className={style.modalBody__col}>
@@ -316,7 +311,7 @@ let CoolCoin = () => {
                             <StatItem part='30%' name='NFT staking rewards' />
                             <StatItem part='33%' name='Play to Earn (Single player rewards) ' />
                             <div className={style.modalBody__itemImg}>
-                              <img src={radial} alt="" />
+                              <img src={'./imgs/coolcoin/radial.png'} alt="" />
                             </div>
                           </div>
                         </div>
@@ -358,7 +353,7 @@ let CoolCoin = () => {
                               }}
                               enableGridX={false}
                               enableGridY={false}
-                              colors={{ scheme: 'category10' }}
+                              // colors={{ scheme: 'category10' }}
                               lineWidth={1}
                               enablePoints={false}
                               pointSize={10}
@@ -394,7 +389,7 @@ let CoolCoin = () => {
                   {close => (
                     <div className={style.modal}>
                       <div onClick={close} className={style.modal__close}>
-                        <img src={closeIco} alt="" />
+                        <img src={'./imgs/coolcoin/closeIco.png'} alt="" />
                       </div>
                       <div className={style.modalBody}>
                         <div className={style.modalBody__col}>
@@ -411,7 +406,7 @@ let CoolCoin = () => {
                             <StatItem part='30%' name='NFT staking rewards' />
                             <StatItem part='33%' name='Play to Earn (Single player rewards) ' />
                             <div className={style.modalBody__itemImg}>
-                              <img src={radial} alt="" />
+                              <img src={'./imgs/coolcoin/radial.png'} alt="" />
                             </div>
                           </div>
                         </div>
@@ -453,7 +448,7 @@ let CoolCoin = () => {
                               }}
                               enableGridX={false}
                               enableGridY={false}
-                              colors={{ scheme: 'category10' }}
+                              // colors={{ scheme: 'category10' }}
                               lineWidth={1}
                               enablePoints={false}
                               pointSize={10}
@@ -488,7 +483,7 @@ let CoolCoin = () => {
             <div className={style.coinBody__col}>
               <div className={style.coinBody__colGlow}></div>
               <div className={style.coinBody__img}>
-                <img src={img} alt="" />
+                <img src={'./imgs/coolcoin/img.png'} alt="" />
               </div>
             </div>
           </div>

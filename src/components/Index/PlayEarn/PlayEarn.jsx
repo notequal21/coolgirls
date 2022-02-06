@@ -7,8 +7,6 @@ import SwiperCore, {
   EffectCards
 } from 'swiper';
 
-// imgs
-import img from '../../../assets/img/coolGirls/img01.png'
 
 SwiperCore.use([EffectCards]);
 
@@ -32,47 +30,17 @@ let PlayEarn = () => {
             <Swiper effect={'cards'} grabCursor={true} className={style.palySlider__content}>
               <SwiperSlide className={style.palySlider__contentItem}>
                 <div className={style.palySlider__contentItemImg}>
-                  <img src={img} alt="" />
+                  <img src={'https://coolgirls.io/imgs/playearn/1.PNG'} alt="" />
                 </div>
               </SwiperSlide>
               <SwiperSlide className={style.palySlider__contentItem}>
                 <div className={style.palySlider__contentItemImg}>
-                  <img src={img} alt="" />
+                  <img src={`https://coolgirls.io/imgs/playearn/2.PNG`} alt="" />
                 </div>
               </SwiperSlide>
               <SwiperSlide className={style.palySlider__contentItem}>
                 <div className={style.palySlider__contentItemImg}>
-                  <img src={img} alt="" />
-                </div>
-              </SwiperSlide>
-              <SwiperSlide className={style.palySlider__contentItem}>
-                <div className={style.palySlider__contentItemImg}>
-                  <img src={img} alt="" />
-                </div>
-              </SwiperSlide>
-              <SwiperSlide className={style.palySlider__contentItem}>
-                <div className={style.palySlider__contentItemImg}>
-                  <img src={img} alt="" />
-                </div>
-              </SwiperSlide>
-              <SwiperSlide className={style.palySlider__contentItem}>
-                <div className={style.palySlider__contentItemImg}>
-                  <img src={img} alt="" />
-                </div>
-              </SwiperSlide>
-              <SwiperSlide className={style.palySlider__contentItem}>
-                <div className={style.palySlider__contentItemImg}>
-                  <img src={img} alt="" />
-                </div>
-              </SwiperSlide>
-              <SwiperSlide className={style.palySlider__contentItem}>
-                <div className={style.palySlider__contentItemImg}>
-                  <img src={img} alt="" />
-                </div>
-              </SwiperSlide>
-              <SwiperSlide className={style.palySlider__contentItem}>
-                <div className={style.palySlider__contentItemImg}>
-                  <img src={img} alt="" />
+                  <img src={`https://coolgirls.io/imgs/playearn/3.PNG`} alt="" />
                 </div>
               </SwiperSlide>
             </Swiper>

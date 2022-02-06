@@ -6,18 +6,8 @@ import { useEffect, useState } from 'react';
 
 import { Element } from 'react-scroll'
 
-// imgs
-import bgLine from '../../../assets/img/roadmap/bg-line@2x.png'
-import bg from '../../../assets/img/roadmap/bg@2x.png'
-import icoLife from '../../../assets/img/roadmap/icoLife@2x.png'
-import icoSoon from '../../../assets/img/roadmap/icoSoon@2x.png'
-
 let Roadmap = () => {
   const [isMobile, setIsMobile] = useState(false)
-
-  let styleBgItem = {
-    'transform': 'translate(-50%, -65px)'
-  }
 
   useEffect(() => {
     if (window.innerWidth <= 1200) {
@@ -70,8 +60,8 @@ let Roadmap = () => {
           </div>
           <div className={`${style.roadmapBody} roadmapSlider`}>
             <div className={style.roadmapBody__bg}>
-              <img src={bgLine} alt="" />
-              <img src={bg} alt="" />
+              <img src={`https://coolgirls.io/imgs/roadmap/bg-line.png`} alt="" />
+              <img src={`https://coolgirls.io/imgs/roadmap/bg.png`} alt="" />
               <div className={style.roadmapBody__bgItem}>
 
               </div>
@@ -109,7 +99,7 @@ let Roadmap = () => {
                 <div className={`${style.roadmapBody__item} ${style.roadmapBody__item_ended} `}>
 
                   <div className={style.roadmapBody__itemIco}>
-                    <img src={icoSoon} alt="" />
+                    <img src={'https://coolgirls.io/imgs/roadmap/icoSoon.png'} alt="" />
                   </div>
                   <div className={style.roadmapBody__itemPrice}>
                     0.3 SOL
@@ -142,7 +132,7 @@ let Roadmap = () => {
                     Life
                   </div>
                   <div className={style.roadmapBody__itemIco}>
-                    <img src={icoLife} alt="" />
+                    <img src={'https://coolgirls.io/imgs/roadmap/icoLife.png'} alt="" />
                   </div>
                   <div className={style.roadmapBody__itemPrice}>
                     1.0 SOL
@@ -174,7 +164,7 @@ let Roadmap = () => {
                 <div className={style.roadmapBody__itemCircle}></div>
                 <div className={`${style.roadmapBody__item} ${style.roadmapBody__item_soon} `}>
                   <div className={style.roadmapBody__itemIco}>
-                    <img src={icoSoon} alt="" />
+                    <img src={'https://coolgirls.io/imgs/roadmap/icoSoon.png'} alt="" />
                   </div>
                   <div className={style.roadmapBody__itemPrice}>
                     2.0 SOL
@@ -200,7 +190,7 @@ let Roadmap = () => {
                 <div className={style.roadmapBody__itemCircle}></div>
                 <div className={`${style.roadmapBody__item} ${style.roadmapBody__item_soon} `}>
                   <div className={style.roadmapBody__itemIco}>
-                    <img src={icoSoon} alt="" />
+                    <img src={'https://coolgirls.io/imgs/roadmap/icoSoon.png'} alt="" />
                   </div>
                   <div className={style.roadmapBody__itemPrice}>
                     3.0 SOL
@@ -252,7 +242,7 @@ let Roadmap = () => {
                 <div className={`${style.roadmapBody__item} ${style.roadmapBody__item_ended}`}>
                   <div className={style.roadmapBody__itemCircle}></div>
                   <div className={style.roadmapBody__itemIco}>
-                    <img src={icoSoon} alt="" />
+                    <img src={'https://coolgirls.io/imgs/roadmap/icoSoon.png'} alt="" />
                   </div>
                   <div className={style.roadmapBody__itemPrice}>
                     0.3 SOL
@@ -282,7 +272,7 @@ let Roadmap = () => {
                     Life
                   </div>
                   <div className={style.roadmapBody__itemIco}>
-                    <img src={icoLife} alt="" />
+                    <img src={'https://coolgirls.io/imgs/roadmap/icoLife.png'} alt="" />
                   </div>
                   <div className={style.roadmapBody__itemPrice}>
                     1.0 SOL
@@ -313,7 +303,7 @@ let Roadmap = () => {
                 <div className={`${style.roadmapBody__item} ${style.roadmapBody__item_soon}`}>
                   <div className={style.roadmapBody__itemCircle}></div>
                   <div className={style.roadmapBody__itemIco}>
-                    <img src={icoSoon} alt="" />
+                    <img src={'https://coolgirls.io/imgs/roadmap/icoSoon.png'} alt="" />
                   </div>
                   <div className={style.roadmapBody__itemPrice}>
                     2.0 SOL
@@ -340,7 +330,7 @@ let Roadmap = () => {
                     listed on marketplaces
                   </div> */}
                   <div className={style.roadmapBody__itemIco}>
-                    <img src={icoSoon} alt="" />
+                    <img src={'https://coolgirls.io/imgs/roadmap/icoSoon.png'} alt="" />
                   </div>
                   <div className={style.roadmapBody__itemPrice}>
                     3.0 SOL

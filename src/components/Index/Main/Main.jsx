@@ -4,7 +4,7 @@ import style from './Main.module.scss'
 let Main = () => {
   return (
     <>
-      <div className={`${style.main}`}>
+      <div id='about' className={`${style.main}`}>
         <div className="container">
           <div className={style.bg__circle}></div>
           <div className={`${style.mainBody}`}>
@@ -12,7 +12,7 @@ let Main = () => {
               <div className={`${style.mainBody__textTitle}`}>
                 Welcome to <br className={style.br__mobile} /> the <span>Cool</span> <br className={style.br} /> <span>Girls</span> collection
                 <div className={style.zverek}>
-                  <img src="/coolgirls/imgs/zverek.png" alt="" />
+                  <img src="https://coolgirls.io/imgs/zverek.png" alt="" />
                 </div>
               </div>
               <div className={`${style.mainBody__textDesc}`}>
@@ -23,9 +23,9 @@ let Main = () => {
               <div className={`${style.mainBody__btnsItem}`}>
                 Reserve your NFT
               </div>
-              <div className={`${style.mainBody__btnsItem}`}>
+              <a target={`_blank`} href='https://discord.com/invite/VXzzP2J45c' className={`${style.mainBody__btnsItem}`}>
                 Discord
-              </div>
+              </a>
             </div>
           </div>
         </div>

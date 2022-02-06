@@ -27,9 +27,11 @@ let Index = () => {
         <Roadmap />
         <CoolCoin />
         <CoolGirls />
+
         <PlayEarn />
         <Faqs />
         <Team />
+
       </Suspense>
 
     </>

@@ -4,10 +4,13 @@ import './CoolGirlsSLider.scss';
 // import 'swiper/css';
 
 // img
-import img01 from '../../../assets/img/coolGirls/img01.png'
-import img02 from '../../../assets/img/coolGirls/img02.png'
-import img03 from '../../../assets/img/coolGirls/img03.png'
+// import img01 from '../../../assets/img/coolGirls/img01.png'
+// import img02 from '../../../assets/img/coolGirls/img02.png'
+// import img03 from '../../../assets/img/coolGirls/img03.png'
 import { useEffect, useState } from 'react'
+const img01 = './imgs/playearn/5.jpg'
+const img02 = './imgs/playearn/6.jpg'
+const img03 = './imgs/playearn/4.jpg'
 
 let CoolGirls = () => {
 

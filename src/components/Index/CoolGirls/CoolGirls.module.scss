@@ -46,8 +46,10 @@
         left: 0;
         width: 100%;
         height: 100%;
-        -webkit-filter: blur(50px);
-        filter: blur(50px);
+        // filter: blur(50px);
+        // filter: blur(50px);
+        // display: none;
+        box-shadow: inset 0 0 50px black;
       }
       &:first-child {
         margin: 0;
@@ -63,7 +65,7 @@
       }
       &:nth-child(3) {
         .girlsBody__itemBg {
-          border: solid 3px rgba(0, 0, 0, 0.2);
+          // border: solid 3px rgba(0, 0, 0, 0.2);
           background-image: linear-gradient(29deg, #e4148c -36%, #3ed5f5 100%);
         }
       }

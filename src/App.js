@@ -13,7 +13,7 @@ function App() {
         <div className="content">
           <Routes>
             <Route path='/' element={<Index />} />
-            <Route path='builder' element={<Builder />} />
+            <Route path='/builder' element={<Builder />} />
           </Routes>
         </div>
         <Footer />

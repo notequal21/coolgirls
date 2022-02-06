@@ -2,6 +2,7 @@ import "./GirlsSlider.scss";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay } from "swiper";
 import style from "./GirlsSlider.module.scss";
+// import 'swiper/css';
 
 let GirlsSlider = () => {
 
@@ -122,7 +123,11 @@ let GirlsSlider = () => {
       <div className={`${`${style.sliderItem}`} ${isActive ? `${style.active}` : ''}`}>
         <div className={`${`${style.sliderItem__glow}`}`}></div>
         <div className={`${style.sliderItem__img}`}>
-          <img src={`/coolgirls/imgs/girls_slider/${slide.imgUrl}`} alt="" />
+          {/* <img src={`/coolgirls/imgs/girls_slider/${slide.imgUrl}`} alt="" /> */}
+          {/* <img src={`/imgs/girls_slider/${slide.imgUrl}`} srcSet={`/imgs/girls_slider/${slide.imgUrl} 1x, /imgs/girls_slider/${slide.imgUrl} 2x`} alt="" /> */}
+          {/* <img src={`https://coolgirls.io/imgs/girls_slider/${slide.imgUrl}`} alt="" /> */}
+          {/* <img src={`https://notequal21.github.io/coolgirls/imgs/girls_slider/${slide.imgUrl}`} alt="" /> */}
+          <img src={`https://coolgirls.io/imgs/girls_slider/${slide.imgUrl}`} alt="" />
         </div>
         <div className={`${`${style.sliderItem__content}`} ${isActive ? `${style.active}` : ''}`}>
           <div className={`${style.sliderItem__name}`}>
@@ -155,7 +160,7 @@ let GirlsSlider = () => {
           spaceBetween={50}
           slidesPerView={'auto'}
           loop={true}
-          loopAdditionalSlides={2}
+          // loopAdditionalSlides={2}
           // slidesPerView={3}
           initialSlide={2}
           centeredSlides={true}
