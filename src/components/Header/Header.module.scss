@@ -215,4 +215,7 @@
   -webkit-filter: blur(192.3px);
   filter: blur(192.3px);
   background-image: linear-gradient(to bottom, #772cd2, rgba(253, 19, 127, 0.8));
+  @media (max-width:992px) {
+  display: none;    
+  }
 }

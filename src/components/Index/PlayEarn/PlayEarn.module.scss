@@ -86,6 +86,34 @@
 @media (max-width:1500px) {
 
 }
+@media (max-width:1400px) {
+  .paly {
+    &Slider {
+      &__content {
+        &Item {
+          &Img {
+            max-width: 745px;
+            padding: 0 0 36.1% 0;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width:1230px) {
+  .paly {
+    &Slider {
+      &__content {
+        &Item {
+          &Img {
+            height: 419px;
+            padding: 0;
+          }
+        }
+      }
+    }
+  }
+}
 @media (max-width:1200px) {
 
 }
@@ -111,6 +139,8 @@
       &__content {
         &Item {
           &Img {
+            height: auto;
+            max-width: 100%;
             padding: 0 0 56.1% 0;
           }
         }

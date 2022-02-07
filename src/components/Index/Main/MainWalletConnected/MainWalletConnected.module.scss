@@ -1,0 +1,135 @@
+.main {
+  &Body {
+    &__btns {
+      margin: 40px 0 0 0;
+      display: flex;
+      justify-content: center;
+      &Value {
+        font-family: AvenirNext;
+        font-size: 15px;
+        font-weight: 600;
+        letter-spacing: -0.57px;
+        color: rgba(255, 255, 255, 0.4);
+        span {
+          color: #fff;
+        }
+      }
+      &Label {
+        margin: 4px auto 0;
+        opacity: 0.4;
+        font-family: AvenirNext;
+        font-size: 11px;
+        font-weight: 500;
+        letter-spacing: -0.09px;
+        color: #fff;
+      }
+      &Item {
+        cursor: pointer;
+        font-family: AvenirNext;
+        font-size: 16px;
+        font-weight: bold;
+        letter-spacing: -0.11px;
+        text-align: center;
+        color: #fff;
+        border-radius: 21px;
+        border: solid 2px rgba(255, 255, 255, 0.1);
+        background-color: transparent;
+        padding: 18px 25px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        transition: all .3s ease;
+        overflow: hidden;
+        position: relative;
+        &::before {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 0;
+          display: block;
+          background-color: rgba(255, 255, 255, 0.1);
+          width: 100%;
+          height: 100%;
+          transition: all .3s ease;
+          transform: translate(100%, -100%) scale(0);
+          border-radius: 40%;
+        }
+        &:hover {
+          &::before {
+            transform: translate(100%, -100%) scale(4);
+          }
+        }
+        &:first-child {
+          width: 225px;
+          border: none;
+          background-image: linear-gradient(114deg, #772cd2, rgba(253, 19, 127, 0.8) 126%);
+          margin: 0 4px 0 0;
+          border-radius: 21px 7px 7px 21px;
+          &:hover {
+            background-image: linear-gradient(-114deg, #772cd2, rgba(253, 19, 127, 0.8) 126%);
+          }
+        }
+        &:last-child {
+          display: flex;
+          flex-direction: column;
+          width: 140px;
+          border-radius: 7px 21px 21px 7px;
+          background-color: rgba($color: #000000, $alpha: 0.1);
+          padding: 14px 25px;
+          &::before {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+.wallet {
+  max-width: 330px;
+  margin: 15px auto 0;
+  padding: 15px 20px;
+  display: flex;
+  border-radius: 16px;
+  border: solid 1px rgba(255, 255, 255, 0.1);
+  background-color: rgba($color: #000000, $alpha: 0.1);
+  &__item {
+    font-family: AvenirNext;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: -0.1px;
+    color: rgba($color: #fff, $alpha: 0.4);
+    span {
+      color: rgba($color: #fff, $alpha: 1.0);
+    }
+  }
+  &__divider {
+    display: block;
+    width: 1px;
+    margin: 0 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+}
+@media (max-width: 365px) {
+  .wallet {
+    padding: 15px 15px;
+    &__item {
+      font-size: 12px;
+    }
+  }
+  .mainBody__btnsItem {
+    padding: 13px 20px;
+    &:first-child {
+      width: 100%;
+      max-width: 160px;
+    }
+  }
+  .mainBody__btns {
+    &Value {
+      font-size: 13px;
+    }
+    &Label {
+      font-size: 10px;
+    }
+  }
+}

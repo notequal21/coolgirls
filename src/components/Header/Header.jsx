@@ -11,7 +11,7 @@ let Header = () => {
     <>
       <div className={`${style.header}`}>
         <div className="container">
-          {/* <div className={style.bg__circle}></div> */}
+          <div className={style.bg__circle}></div>
           <div className={`${style.headerBody}`}>
             <Link to='' className={`${style.headerBody__logo}`}>
               <svg width="102" height="28" viewBox="0 0 102 28" xmlns="http://www.w3.org/2000/svg">
