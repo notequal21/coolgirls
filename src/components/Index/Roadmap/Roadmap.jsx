@@ -92,6 +92,7 @@ let Roadmap = () => {
               slidesPerView={"auto"}
               centeredSlides={true}
               autoHeight={false}
+              initialSlide={1}
             >
               <SwiperSlide className={`${style.roadmapBody__itemContent} `}>
                 <div className={`${style.roadmapBody__itemCircle} `}></div>

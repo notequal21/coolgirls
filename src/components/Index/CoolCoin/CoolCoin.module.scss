@@ -323,7 +323,8 @@
 @media (max-width:1200px) {
   .modal {
     width: 720px;
-    height: 100vh;
+    height: calc(100vh - 60px);
+    margin: 30px 0 0 0;
     padding: 20px 10px;
     overflow-y: scroll;
     &Body {
@@ -556,6 +557,150 @@
       }
     }
   }
+  .modal {
+    &Body {
+      &__col {
+      }
+      &__item {
+        &_line {
+          margin: 20px 0 0 0;
+          height: 160px;
+        }
+        &Img {
+          width: auto;
+          height: 120px;
+          margin: 50px auto 50px;
+        }
+      }
+      &__stat {
+        &:nth-child(1) {
+          top: 6px;
+          .modalBody__statLine {
+            padding: 6px 0 0 0;
+            span {
+              &:nth-child(1) {}
+              &:nth-child(2) {
+                transform: rotate(105deg) scale(0.25);
+              }
+            }
+          }
+        }
+        &:nth-child(2) {
+          top: 22px;
+          left: calc(50% - 114px);
+          .modalBody__statLine {
+            padding: 6px 0 0 0;
+            span {
+              &:nth-child(1) {}
+              &:nth-child(2) {
+                transform: rotate(-120deg) scale(0.25);
+              }
+            }
+          }
+        }
+        &:nth-child(3) {
+          top: 70px;
+          left: calc(50% - 117px);
+          .modalBody__statLine {
+            padding: 6px 0 0 0;
+            span {
+              &:nth-child(1) {}
+              &:nth-child(2) {
+              }
+            }
+          }
+        }
+        &:nth-child(4) {
+          top: 180px;
+          left: calc(50% - 65px);
+          .modalBody__statPart {
+          }
+          .modalBody__statName {
+          }
+          .modalBody__statLine {
+            span {
+            }
+          }
+        }
+        &:nth-child(5) {
+          top: 176px;
+          left: calc(50% - 16px);
+          .modalBody__statPart {
+          }
+          .modalBody__statName {
+          }
+          .modalBody__statLine {
+            span {
+            }
+          }
+        }
+        &:nth-child(6) {
+          top: 150px;
+          left: calc(50% - -24px);
+          .modalBody__statPart {
+          }
+          .modalBody__statName {
+          }
+          .modalBody__statLine {
+            span {
+            }
+          }
+        }
+        &:nth-child(7) {
+          top: 120px;
+          left: calc(50% + 70px);
+          .modalBody__statLine {
+            padding: 6px 0 0 0;
+            span {
+              &:nth-child(1) {
+                transform: scale(0.8) translate(-10px, 1px);
+              }
+              &:nth-child(2) {
+                transform: rotate(-183deg) scale(0.6)
+              }
+            }
+          }
+        }
+        &:nth-child(8) {
+          top: 60px;
+          left: calc(50% + 70px);
+          .modalBody__statLine {
+            padding: 6px 0 0 0;
+            span {
+              &:nth-child(1) {
+                transform: translate(-12px, 1px) scale(0.7);
+              }
+              &:nth-child(2) {
+                transform: rotate(-210deg) scale(0.35);
+              }
+            }
+          }
+        }
+        &Part {
+          font-size: 12px;
+        }
+        &Name {
+          font-size: 7px;
+          margin: 2px 0 0 0;
+        }
+        &Line {
+          span {
+            &:nth-child(1) {}
+            &:nth-child(2) {}
+          }
+        }
+      }
+    }
+    &Legends {
+      margin: 15px 0 0 0;
+      &__item {
+        margin: 8px 0 0 0;
+        span {
+        }
+      }
+    }
+  }
+  
 }
 @media (max-width:575px) {
 

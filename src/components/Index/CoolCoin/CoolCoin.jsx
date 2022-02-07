@@ -406,7 +406,8 @@ let CoolCoin = () => {
                             <StatItem part='30%' name='NFT staking rewards' />
                             <StatItem part='33%' name='Play to Earn (Single player rewards) ' />
                             <div className={style.modalBody__itemImg}>
-                              <img src={'./imgs/coolcoin/radial.png'} alt="" />
+                              {/* <img src={'./imgs/coolcoin/radial.png'} alt="" /> */}
+                              <img src={'https://coolgirls.io/imgs/coolcoin/radial.png'} alt="" />
                             </div>
                           </div>
                         </div>
